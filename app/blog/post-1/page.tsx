@@ -1,221 +1,279 @@
-import React from 'react';
-
-export default function SeattleClosetTips() {
+export default function Top10ClosetTipsSeattle() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-slate-800 text-white py-4">
-        <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold">ProCraft Closets Seattle</h1>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
-        {/* Hero Section */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-slate-800 mb-4 leading-tight">
-            Top 10 Closet Tips for Seattle Homeowners: Transform Your Space with Pacific Northwest Style
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <article className="prose lg:prose-xl">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Top 10 Closet Tips for Seattle Homeowners: Maximize Your Space in the Emerald City
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed">
-            Discover expert closet organization strategies specifically designed for Seattle homes, from maximizing small spaces to protecting your wardrobe from the Pacific Northwest's unique climate challenges.
-          </p>
-        </div>
+          <div className="flex items-center text-gray-600 text-sm mb-6">
+            <span>Published by ProCraft Closets Seattle</span>
+            <span className="mx-2">•</span>
+            <time>{new Date().toLocaleDateString()}</time>
+          </div>
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Living in Seattle means dealing with unique challenges like limited space, seasonal weather changes, 
+              and the Pacific Northwest lifestyle. As Seattle's premier custom closet specialists, ProCraft Closets 
+              has helped thousands of homeowners transform their storage spaces. Here are our top 10 expert tips 
+              to help you create the perfect closet for your Seattle home.
+            </p>
+          </div>
+        </header>
 
-        {/* Introduction */}
-        <section className="mb-10 bg-slate-50 p-6 rounded-lg">
-          <p className="text-lg text-slate-700 leading-relaxed mb-4">
-            Living in Seattle presents unique challenges for homeowners when it comes to closet organization and storage solutions. With our city's characteristic smaller living spaces, wet climate, and active outdoor lifestyle, Seattle residents need closet systems that work as hard as they do. Whether you're dealing with a cramped Capitol Hill apartment, a charming Ballard bungalow, or a modern Bellevue home, the right closet organization can transform your daily routine and maximize your valuable square footage.
-          </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
-            At ProCraft Closets, we've been helping Seattle homeowners optimize their closet spaces for over a decade. We understand the unique needs of Pacific Northwest living – from storing rain gear and hiking equipment to organizing professional attire in compact spaces. These ten expert tips will help you create a functional, beautiful closet that perfectly suits your Seattle lifestyle.
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-6">
+            Why Seattle Homes Need Special Closet Considerations
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Seattle's unique climate, housing styles, and lifestyle demands require thoughtful closet design. From 
+            managing rain gear and outdoor equipment to organizing professional attire for the city's thriving 
+            tech industry, Seattle homeowners face distinct storage challenges. Whether you're in a Capitol Hill 
+            craftsman, a Belltown condo, or a Ballard townhome, these tips will help you maximize your closet space.
           </p>
         </section>
 
-        {/* Main Tips */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-bold text-slate-800 mb-6">Expert Closet Organization Tips for Seattle Living</h2>
+        <section className="mb-12">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-8">
+            Top 10 Closet Organization Tips for Seattle Homeowners
+          </h2>
+
+          <div className="space-y-8">
+            <div className="border-l-4 border-green-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                1. Prioritize Weather-Specific Storage Solutions
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Seattle's rainy climate means you need dedicated space for rain jackets, umbrellas, and waterproof gear. 
+                Install hooks near your closet entrance for quick access to rain coats, and consider a designated cubby 
+                for wet umbrellas with a drip tray underneath.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Add ventilated storage for damp outdoor gear</li>
+                <li>Install pull-out drawers for rain boots and waterproof shoes</li>
+                <li>Create seasonal rotation space for heavy winter coats</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-blue-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                2. Maximize Vertical Space in Smaller Seattle Homes
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Many Seattle homes, especially in neighborhoods like Queen Anne and Fremont, feature smaller bedrooms 
+                with limited closet space. The key is thinking vertically and using every inch from floor to ceiling.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Install double-hang rods to double your hanging space</li>
+                <li>Use stackable storage bins on upper shelves</li>
+                <li>Add over-door organizers for accessories and small items</li>
+                <li>Consider ceiling-mounted storage for seasonal items</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-purple-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                3. Create Tech-Professional Work Wardrobes
+              </h3>
+              <p className="text-gray-700 mb-4">
+                With Seattle's booming tech industry, many residents need organized spaces for both casual and 
+                business-casual attire. Design your closet to support your professional lifestyle while maintaining 
+                the Pacific Northwest's relaxed aesthetic.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Dedicate hanging space for blazers and dress shirts</li>
+                <li>Install pull-out tie and belt racks</li>
+                <li>Create separate sections for casual Friday and weekend wear</li>
+                <li>Add charging stations for work devices and accessories</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-orange-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                4. Implement Moisture Control Systems
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Seattle's humidity can create problems in enclosed spaces. Protecting your clothing and accessories 
+                from moisture damage is crucial for maintaining your wardrobe investment.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Install ventilation systems or fans in larger closets</li>
+                <li>Use moisture absorbers and cedar blocks</li>
+                <li>Choose breathable garment bags over plastic</li>
+                <li>Ensure proper spacing between clothes for air circulation</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-red-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                5. Design Multi-Season Storage Systems
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Seattle's mild but varied seasons require flexible storage solutions. Create a system that allows 
+                easy rotation between summer hiking gear and winter rain protection.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Use vacuum storage bags for bulky seasonal items</li>
+                <li>Install adjustable shelving that can be reconfigured</li>
+                <li>Create labeled bins for seasonal rotation</li>
+                <li>Designate easy-access areas for current season items</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-teal-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                6. Incorporate Sustainable Organization Solutions
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Seattleites value sustainability, and your closet organization should reflect these values. 
+                Choose eco-friendly materials and create systems that encourage clothing longevity and reuse.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Use bamboo or recycled material organizers</li>
+                <li>Create a donation station for items you no longer wear</li>
+                <li>Install proper lighting to prevent buying duplicates</li>
+                <li>Choose quality storage solutions that will last for years</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-indigo-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                7. Optimize for Seattle's Active Lifestyle
+              </h3>
+              <p className="text-gray-700 mb-4">
+                From hiking the Cascades to biking the Burke-Gilman Trail, Seattle residents are active. Your closet 
+                should accommodate athletic wear, outdoor gear, and the quick transitions between activities.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Dedicate drawers for athletic wear and activewear</li>
+                <li>Install hooks for gym bags and backpacks</li>
+                <li>Create compartments for outdoor gear like hiking boots</li>
+                <li>Add mesh bags for dirty workout clothes</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-pink-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                8. Utilize Smart Lighting Solutions
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Seattle's frequent overcast days mean your closet needs excellent lighting to help you choose 
+                outfits and maintain organization. Poor lighting leads to poor clothing choices and disorganization.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Install LED strip lighting under shelves and rods</li>
+                <li>Add motion-sensor lights for convenience</li>
+                <li>Use battery-operated puck lights in dark corners</li>
+                <li>Consider a full-spectrum light for color accuracy</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-yellow-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                9. Create Flexible Storage for Changing Needs
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Seattle's dynamic job market and lifestyle mean your storage needs may change. Design your closet 
+                with flexibility in mind to adapt to new careers, hobbies, or living situations.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Choose modular storage systems that can be reconfigured</li>
+                <li>Install adjustable shelving and rods</li>
+                <li>Use portable organizers that can move with you</li>
+                <li>Plan for growth in your wardrobe and lifestyle</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-gray-500 pl-6">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                10. Incorporate Space-Saving Hardware
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Make the most of your Seattle home's closet space with innovative hardware solutions that maximize 
+                functionality without requiring structural changes.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 ml-4">
+                <li>Install pull-out drawers and baskets</li>
+                <li>Use rotating corner units to access difficult spaces</li>
+                <li>Add slide-out shoe racks and jewelry organizers</li>
+                <li>Consider fold-down ironing boards for small spaces</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-12 bg-gray-50 p-8 rounded-lg">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-6">
+            Expert Tips from ProCraft Closets Seattle
+          </h2>
           
-          {/* Tip 1 */}
-          <div className="mb-8 border-l-4 border-blue-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">1. Maximize Vertical Space with Custom Shelving</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Seattle homes often feature unique architectural elements but limited closet space. Make every inch count by installing floor-to-ceiling custom shelving systems. Utilize the often-wasted space above your highest hanging rod by adding shelves for seasonal items, luggage, or rarely-used belongings.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              <strong>Pro tip:</strong> Install adjustable shelving systems that can adapt as your storage needs change. This flexibility is especially valuable in Seattle's dynamic housing market where residents frequently relocate.
-            </p>
-          </div>
-
-          {/* Tip 2 */}
-          <div className="mb-8 border-l-4 border-green-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">2. Combat Seattle's Humidity with Proper Ventilation</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              The Pacific Northwest's moist climate can wreak havoc on clothing and accessories stored in poorly ventilated closets. Prevent mold, mildew, and musty odors by ensuring proper air circulation throughout your closet space.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Install ventilation fans in walk-in closets, use moisture absorbers, and consider cedar elements which naturally repel moisture and insects. Avoid storing damp clothing, especially rain gear, without proper drying first.
-            </p>
-          </div>
-
-          {/* Tip 3 */}
-          <div className="mb-8 border-l-4 border-purple-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">3. Create Dedicated Zones for Seattle's Multi-Season Wardrobe</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Seattle's unpredictable weather means you need quick access to everything from summer shorts to winter rain gear – sometimes on the same day! Organize your closet into distinct zones: everyday wear, professional attire, outdoor gear, and seasonal items.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Keep transitional pieces like light sweaters and waterproof jackets in easily accessible areas. Store heavy winter coats and summer-only items in higher or lower sections during off-seasons.
-            </p>
-          </div>
-
-          {/* Tip 4 */}
-          <div className="mb-8 border-l-4 border-red-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">4. Invest in Quality Hangers for Longevity</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Ditch the wire hangers and invest in quality wooden or velvet hangers that maintain garment shape and prevent slipping. For Seattle's professional workforce, this investment pays dividends in maintaining the appearance of business attire.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Use specialty hangers for specific items: padded hangers for delicate blouses, suit hangers for jackets, and clips hangers for pants. Consistent hanger types also create a cleaner, more organized appearance.
-            </p>
-          </div>
-
-          {/* Tip 5 */}
-          <div className="mb-8 border-l-4 border-yellow-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">5. Implement the "One In, One Out" Rule</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              With Seattle's limited closet space, maintaining organization requires discipline. For every new item you bring into your closet, remove one item that no longer serves you. This practice prevents accumulation and keeps your space manageable.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Consider Seattle's excellent donation infrastructure – organizations like Goodwill, The Salvation Army, and local shelters make it easy to give your gently used items a second life while supporting the community.
-            </p>
-          </div>
-
-          {/* Tip 6 */}
-          <div className="mb-8 border-l-4 border-indigo-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">6. Optimize Lighting for Seattle's Gray Days</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Seattle's famously overcast skies mean your closet needs excellent artificial lighting. Poor lighting makes it difficult to coordinate outfits and can lead to purchasing duplicate items unnecessarily.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Install LED strip lighting along shelves and hanging rods, and consider battery-operated puck lights for deep shelves. Motion-sensor lights add convenience while conserving energy – perfect for environmentally-conscious Seattle residents.
-            </p>
-          </div>
-
-          {/* Tip 7 */}
-          <div className="mb-8 border-l-4 border-pink-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">7. Utilize Door Space for Maximum Efficiency</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Don't overlook the back of your closet door – this prime real estate can house shoes, accessories, ties, or cleaning supplies. Over-the-door organizers are particularly valuable in Seattle's smaller homes and apartments.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Install hooks for bags, robes, or tomorrow's outfit. Use clear shoe organizers for small accessories, scarves, or even outdoor gear like gloves and beanies that Seattle residents use year-round.
-            </p>
-          </div>
-
-          {/* Tip 8 */}
-          <div className="mb-8 border-l-4 border-teal-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">8. Store Seasonal Items Strategically</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Seattle's mild climate means you'll need access to various seasonal items throughout the year, but you don't need everything at arm's reach. Store heavy coats, boots, and winter gear in upper shelves during summer months.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Use clear, labeled bins for seasonal rotation. Keep a few transitional pieces accessible year-round since Seattle weather can be unpredictable – you might need a light jacket in July!
-            </p>
-          </div>
-
-          {/* Tip 9 */}
-          <div className="mb-8 border-l-4 border-orange-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">9. Incorporate Seattle-Specific Storage Solutions</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Design your closet with Seattle living in mind. Create designated spaces for rain gear, hiking equipment, and the layers that are essential for Pacific Northwest weather. Consider installing hooks specifically for wet umbrellas and rain coats.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              If you're an outdoor enthusiast (like many Seattleites), dedicate a section to active wear and gear. Use bins or baskets to organize hiking socks, base layers, and seasonal outdoor accessories.
-            </p>
-          </div>
-
-          {/* Tip 10 */}
-          <div className="mb-8 border-l-4 border-cyan-500 pl-6">
-            <h3 className="text-2xl font-semibold text-slate-800 mb-3">10. Regular Maintenance and Seasonal Reviews</h3>
-            <p className="text-slate-700 leading-relaxed mb-3">
-              Set a schedule to review and reorganize your closet seasonally. Seattle's changing seasons provide natural transition points to assess what's working, what needs adjustment, and what items should be donated or stored elsewhere.
-            </p>
-            <p className="text-slate-700 leading-relaxed">
-              Perform monthly mini-cleanouts, checking for items that have migrated from their designated spots. This small investment of time prevents major reorganization projects and keeps your system functioning smoothly.
-            </p>
-          </div>
-        </section>
-
-        {/* Expert Insights */}
-        <section className="mb-10 bg-blue-50 p-6 rounded-lg">
-          <h2 className="text-3xl font-bold text-slate-800 mb-6">Expert Insights from ProCraft Closets</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Common Seattle Closet Challenges</h3>
-              <ul className="text-slate-700 space-y-2">
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Limited square footage in urban apartments
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Moisture management in humid conditions
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Accommodating diverse wardrobe needs
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-500 mr-2">•</span>
-                  Inadequate lighting in older homes
-                </li>
-              </ul>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Professional Assessment</h3>
+              <p className="text-gray-700">
+                Before making any changes, have a professional assess your space. ProCraft Closets offers 
+                free consultations to help Seattle homeowners identify the best solutions for their specific 
+                needs and space constraints.
+              </p>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Investment Priorities</h3>
-              <ul className="text-slate-700 space-y-2">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-2">•</span>
-                  Custom shelving systems for maximum efficiency
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-2">•</span>
-                  Quality lighting solutions
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-2">•</span>
-                  Moisture control and ventilation
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-2">•</span>
-                  Durable, weather-appropriate materials
-                </li>
-              </ul>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Quality Investment</h3>
+              <p className="text-gray-700">
+                Invest in quality materials that can withstand Seattle's humidity and daily use. Custom solutions 
+                may cost more upfront but provide better organization and longevity than temporary fixes.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Seasonal Maintenance</h3>
+              <p className="text-gray-700">
+                Schedule seasonal closet maintenance to rotate clothes, check for moisture issues, and 
+                reorganize based on changing needs. This prevents problems and maintains organization.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Local Solutions</h3>
+              <p className="text-gray-700">
+                Work with local Seattle closet professionals who understand the unique challenges of Pacific 
+                Northwest living and can provide solutions tailored to local conditions and lifestyle needs.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Conclusion */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-bold text-slate-800 mb-6">Transform Your Seattle Home with Smart Closet Solutions</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-4">
-            Implementing these ten closet organization tips will help you maximize your storage space while protecting your belongings from Seattle's unique climate challenges. Remember that the best closet system is one that adapts to your lifestyle and makes your daily routine more efficient.
+        <section className="mb-8">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-6">
+            Transform Your Seattle Home with Professional Closet Design
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Implementing these closet organization tips can significantly improve your daily routine and maximize 
+            your Seattle home's storage potential. From managing the Pacific Northwest's weather challenges to 
+            accommodating the city's professional and active lifestyle, proper closet organization makes a 
+            measurable difference in your quality of life.
           </p>
-          <p className="text-lg text-slate-700 leading-relaxed mb-4">
-            Whether you're organizing a compact downtown condo or a spacious family home in the suburbs, these strategies will help you create a functional, beautiful space that truly works for Pacific Northwest living. The key is to start with one area and gradually implement changes that make sense for your specific needs and space constraints.
-          </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
-            A well-organized closet isn't just about storage – it's about creating a calm, efficient start to your day in our bustling city. With the right systems in place, you'll spend less time searching for items and more time enjoying everything Seattle has to offer.
+          <p className="text-gray-700 mb-4">
+            Remember that every Seattle home is unique, whether you're in a historic Wallingford bungalow or a 
+            modern South Lake Union high-rise. The key is adapting these tips to your specific space, needs, 
+            and lifestyle while maintaining functionality and aesthetics.
           </p>
         </section>
 
-        {/* Call to Action */}
-        <section className="bg-slate-800 text-white p-8 rounded-lg text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Seattle Closet?</h2>
-          <p className="text-xl mb-6 text-slate-200">
-            Let ProCraft Closets design a custom storage solution that perfectly fits your Seattle lifestyle and home.
+        <section className="bg-blue-900 text-white p-8 rounded-lg text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Transform Your Seattle Closet?
+          </h2>
+          <p className="text-xl mb-6 text-blue-100">
+            Let ProCraft Closets design the perfect storage solution for your Seattle home. 
+            Our expert team understands the unique needs of Pacific Northwest living.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors w-full sm:w-auto">
-              Schedule Free
+            <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors w-full sm:w-auto">
+              Schedule Free Consultation
+            </button>
+            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors w-full sm:w-auto">
+              Call (206) 555-CLOSET
+            </button>
+          </div>
+          <p className

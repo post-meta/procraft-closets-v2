@@ -1,19 +1,19 @@
 import React from 'react';
-import { MapPin, Award, Users, Wrench, Clock, Star } from 'lucide-react';
+import { MapPin, Users, Award, Clock, Shield, Wrench } from 'lucide-react';
 
-export default function About() {
+export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-gray-50 py-16">
+      <section className="bg-gradient-to-br from-slate-900 to-slate-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               About ProCraft Closets
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Seattle's premier custom closet design and installation company, transforming homes 
-              one closet at a time since 2015.
+            <p className="text-xl text-slate-200 max-w-3xl mx-auto">
+              Transforming Seattle homes with custom closet solutions since 2015. 
+              We're your trusted local partner for premium storage and organization systems.
             </p>
           </div>
         </div>
@@ -22,33 +22,42 @@ export default function About() {
       {/* Company Story */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  Founded in 2015 by Seattle natives Mark and Sarah Thompson, ProCraft Closets 
-                  began as a solution to their own home organization challenges. After struggling 
-                  to find quality, affordable custom closet solutions in the Pacific Northwest, 
-                  they decided to create their own.
-                </p>
-                <p>
-                  What started as a small operation in their garage has grown into Seattle's 
-                  most trusted closet design company, serving hundreds of satisfied customers 
-                  across the greater Seattle area. We've maintained our commitment to quality 
-                  craftsmanship, personalized service, and supporting our local community.
-                </p>
-                <p>
-                  Today, ProCraft Closets is proud to be a locally-owned business that understands 
-                  the unique needs of Pacific Northwest homes, from cozy Capitol Hill apartments 
-                  to spacious Bellevue estates.
-                </p>
-              </div>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Story</h2>
+              <p className="text-slate-600 mb-6">
+                ProCraft Closets was founded in 2015 by Seattle natives who understood the unique storage 
+                challenges of Pacific Northwest homes. From compact downtown condos to sprawling Eastside estates, 
+                we recognized that every Seattle home deserved thoughtfully designed storage solutions.
+              </p>
+              <p className="text-slate-600 mb-6">
+                What started as a small family business has grown into the region's most trusted closet 
+                design and installation company. We've completed over 2,500 projects across the greater 
+                Seattle area, earning our reputation through quality craftsmanship and exceptional service.
+              </p>
+              <p className="text-slate-600">
+                Today, we continue to call Seattle home, serving our neighbors with the same dedication 
+                to quality and attention to detail that established our reputation in the community.
+              </p>
             </div>
-            <div className="bg-gray-100 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <Wrench className="h-16 w-16 mx-auto mb-4" />
-                <p>Founders Mark & Sarah Thompson</p>
+            <div className="bg-slate-100 p-8 rounded-lg">
+              <div className="grid grid-cols-2 gap-6 text-center">
+                <div>
+                  <div className="text-3xl font-bold text-slate-900">2,500+</div>
+                  <div className="text-slate-600">Projects Completed</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-slate-900">8+</div>
+                  <div className="text-slate-600">Years Serving Seattle</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-slate-900">98%</div>
+                  <div className="text-slate-600">Customer Satisfaction</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-slate-900">15+</div>
+                  <div className="text-slate-600">Team Members</div>
+                </div>
               </div>
             </div>
           </div>
@@ -56,45 +65,49 @@ export default function About() {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission & Values</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're committed to creating organized, beautiful spaces that enhance your daily life.
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Mission & Values</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              We're committed to transforming homes and lives through exceptional storage solutions, 
+              backed by unwavering integrity and local expertise.
+            </p>
+          </div>
+          
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-slate-900 mb-4 text-center">Our Mission</h3>
+            <p className="text-lg text-slate-600 text-center max-w-4xl mx-auto">
+              To create beautifully organized spaces that enhance our customers' daily lives while 
+              supporting the Seattle community through quality craftsmanship, honest business practices, 
+              and exceptional service.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
-              <p className="text-gray-600">
-                To transform Seattle homes through innovative custom closet solutions that maximize 
-                space, enhance organization, and reflect each homeowner's unique style and needs. 
-                We believe that an organized home leads to an organized life.
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-xl font-semibold text-slate-900 mb-3">Integrity</h4>
+              <p className="text-slate-600">
+                We build lasting relationships through honest communication, transparent pricing, 
+                and reliable service you can count on.
               </p>
             </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Values</h3>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start">
-                  <Star className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
-                  Quality craftsmanship in every project
-                </li>
-                <li className="flex items-start">
-                  <Users className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
-                  Exceptional customer service
-                </li>
-                <li className="flex items-start">
-                  <MapPin className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
-                  Supporting our local Seattle community
-                </li>
-                <li className="flex items-start">
-                  <Award className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0" />
-                  Honest, transparent business practices
-                </li>
-              </ul>
+            <div className="text-center">
+              <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-xl font-semibold text-slate-900 mb-3">Excellence</h4>
+              <p className="text-slate-600">
+                Every project reflects our commitment to superior craftsmanship and attention 
+                to detail that exceeds expectations.
+              </p>
+            </div>
+            <div className="text-center">
+              <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-xl font-semibold text-slate-900 mb-3">Community</h4>
+              <p className="text-slate-600">
+                As proud Seattle residents, we're invested in our community's success and 
+                support local suppliers and craftspeople.
+              </p>
             </div>
           </div>
         </div>
@@ -104,46 +117,42 @@ export default function About() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-xl text-gray-600">
-              Experienced professionals dedicated to bringing your vision to life.
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Meet Our Team</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Our experienced team of designers and craftspeople brings decades of combined 
+              experience to every project.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                <Users className="h-16 w-16 text-gray-400" />
+              <div className="w-32 h-32 bg-slate-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <Users className="w-16 h-16 text-slate-400" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mark Thompson</h3>
-              <p className="text-blue-600 mb-3">Co-Founder & Lead Designer</p>
-              <p className="text-gray-600 text-sm">
-                15+ years in custom carpentry and design. Mark brings creative vision and 
-                technical expertise to every project.
+              <h4 className="text-xl font-semibold text-slate-900 mb-2">Design Team</h4>
+              <p className="text-slate-600">
+                Certified designers with expertise in space planning and custom storage solutions 
+                for Pacific Northwest homes.
               </p>
             </div>
-
             <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                <Users className="h-16 w-16 text-gray-400" />
+              <div className="w-32 h-32 bg-slate-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <Wrench className="w-16 h-16 text-slate-400" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sarah Thompson</h3>
-              <p className="text-blue-600 mb-3">Co-Founder & Operations Manager</p>
-              <p className="text-gray-600 text-sm">
-                Former interior designer with a passion for organization and customer service. 
-                Sarah ensures every project exceeds expectations.
+              <h4 className="text-xl font-semibold text-slate-900 mb-2">Installation Specialists</h4>
+              <p className="text-slate-600">
+                Licensed and insured craftspeople who ensure precise installation and 
+                exceptional attention to detail.
               </p>
             </div>
-
             <div className="text-center">
-              <div className="bg-gray-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                <Users className="h-16 w-16 text-gray-400" />
+              <div className="w-32 h-32 bg-slate-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <Shield className="w-16 h-16 text-slate-400" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Installation Team</h3>
-              <p className="text-blue-600 mb-3">Certified Craftsmen</p>
-              <p className="text-gray-600 text-sm">
-                Our skilled installation team consists of licensed professionals with extensive 
-                experience in custom closet systems.
+              <h4 className="text-xl font-semibold text-slate-900 mb-2">Customer Care</h4>
+              <p className="text-slate-600">
+                Dedicated support team ensuring smooth communication and complete satisfaction 
+                from consultation to completion.
               </p>
             </div>
           </div>
@@ -151,53 +160,42 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose ProCraft Closets?</h2>
-            <p className="text-xl text-gray-600">
-              Experience the difference that local expertise and personalized service make.
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Why Choose ProCraft Closets</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Experience the difference of working with Seattle's premier closet design company.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-600 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <MapPin className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Local Expertise</h3>
-              <p className="text-gray-600 text-sm">
-                Seattle-based team that understands Pacific Northwest homes and lifestyles.
+              <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-lg font-semibold text-slate-900 mb-3">Local Expertise</h4>
+              <p className="text-slate-600">
+                Deep understanding of Seattle home styles and storage challenges.
               </p>
             </div>
-
             <div className="text-center">
-              <div className="bg-blue-600 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Quality Materials</h3>
-              <p className="text-gray-600 text-sm">
-                Premium materials and hardware sourced from trusted suppliers for lasting durability.
+              <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-lg font-semibold text-slate-900 mb-3">Premium Materials</h4>
+              <p className="text-slate-600">
+                High-quality, sustainable materials built to withstand our Pacific Northwest climate.
               </p>
             </div>
-
             <div className="text-center">
-              <div className="bg-blue-600 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Clock className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">On-Time Delivery</h3>
-              <p className="text-gray-600 text-sm">
-                We respect your schedule with prompt consultations and efficient installations.
+              <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-lg font-semibold text-slate-900 mb-3">Guaranteed Quality</h4>
+              <p className="text-slate-600">
+                Comprehensive warranty and 100% satisfaction guarantee on all installations.
               </p>
             </div>
-
             <div className="text-center">
-              <div className="bg-blue-600 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Star className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Lifetime Warranty</h3>
-              <p className="text-gray-600 text-sm">
-                We stand behind our work with comprehensive warranties on all installations.
+              <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <h4 className="text-lg font-semibold text-slate-900 mb-3">Personal Service</h4>
+              <p className="text-slate-600">
+                One-on-one consultation and support throughout your entire project.
               </p>
             </div>
           </div>
@@ -208,75 +206,75 @@ export default function About() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Service Areas</h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Proudly serving the greater Seattle metropolitan area and surrounding communities.
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Service Areas</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Proudly serving the greater Seattle metropolitan area with professional 
+              closet design and installation services.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Seattle</p>
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <div className="flex items-center mb-6">
+                <MapPin className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-2xl font-semibold text-slate-900">Primary Service Areas</h3>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-4 text-slate-600">
+                <ul className="space-y-2">
+                  <li>• Seattle</li>
+                  <li>• Bellevue</li>
+                  <li>• Redmond</li>
+                  <li>• Kirkland</li>
+                  <li>• Mercer Island</li>
+                  <li>• Sammamish</li>
+                </ul>
+                <ul className="space-y-2">
+                  <li>• Issaquah</li>
+                  <li>• Renton</li>
+                  <li>• Bothell</li>
+                  <li>• Woodinville</li>
+                  <li>• Shoreline</li>
+                  <li>• Edmonds</li>
+                </ul>
+              </div>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Bellevue</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Redmond</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Kirkland</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Bothell</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Renton</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Tacoma</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Everett</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Federal Way</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Kent</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Issaquah</p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold text-gray-900">Sammamish</p>
-            </div>
-          </div>
 
-          <div className="text-center mt-8">
-            <p className="text-gray-600">
-              Don't see your area listed? Contact us to discuss service availability in your location.
-            </p>
+            <div className="bg-slate-100 p-8 rounded-lg">
+              <h4 className="text-xl font-semibold text-slate-900 mb-4">Service Commitment</h4>
+              <p className="text-slate-600 mb-4">
+                We provide comprehensive closet services throughout King County and select 
+                areas of Snohomish County. Our local presence ensures:
+              </p>
+              <ul className="text-slate-600 space-y-2">
+                <li>• Fast response times and flexible scheduling</li>
+                <li>• Local building code knowledge and permit assistance</li>
+                <li>• Ongoing support and warranty service</li>
+                <li>• Relationships with regional suppliers for better pricing</li>
+              </ul>
+              <p className="text-slate-600 mt-4">
+                <strong>Outside our primary area?</strong> Contact us to discuss your project. 
+                We may still be able to help with larger installations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-600">
+      {/* Call to Action */}
+      <section className="py-16 bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Space?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join hundreds of satisfied Seattle homeowners who have trusted ProCraft Closets 
-            with their custom storage solutions.
+          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Space?</h2>
+          <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
+            Join thousands of satisfied Seattle homeowners who trust ProCraft Closets 
+            for their storage solutions.
           </p>
-          <div className="space-x-4">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Schedule Consultation
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              Schedule Free Consultation
             </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              View Our Work
+            <button className="border border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 rounded-lg font-semibold transition-colors">
+              View Our Portfolio
             </button>
           </div>
         </div>

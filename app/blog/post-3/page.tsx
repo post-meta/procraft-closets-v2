@@ -1,282 +1,224 @@
 export default function ClosetTrends2025() {
   return (
     <div className="min-h-screen bg-white">
-      {/* SEO Head would be handled by Next.js metadata API */}
-      
-      {/* Header */}
-      <header className="bg-slate-900 text-white py-4">
-        <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold">ProCraft Closets Seattle</h1>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
-        
-        {/* Hero Section */}
-        <section className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-            Top Closet Trends for 2025: Transform Your Seattle Home Storage
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        <header className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            Top Closet Trends in 2025: Transform Your Space with Modern Design
           </h1>
-          <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-            Discover the latest closet design innovations that are revolutionizing home organization in 2025. 
-            From smart technology integration to sustainable materials, these trends will help you create 
-            the perfect custom closet for your Seattle home.
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Discover the latest closet design trends that are revolutionizing home organization in 2025. 
+            From smart storage solutions to sustainable materials, learn how to create your dream closet space.
           </p>
-          <div className="bg-emerald-50 border-l-4 border-emerald-400 p-6 rounded-r-lg">
-            <p className="text-emerald-800">
-              <strong>Expert Insight:</strong> As Seattle's premier custom closet designers, ProCraft Closets 
-              has identified the most impactful trends shaping closet design in 2025. These innovations 
-              combine functionality with style to maximize your home's storage potential.
+          <div className="mt-6 flex items-center text-sm text-gray-500">
+            <span>By ProCraft Closets Seattle</span>
+            <span className="mx-2">•</span>
+            <span>Seattle, WA</span>
+          </div>
+        </header>
+
+        <main className="prose prose-lg max-w-none">
+          <section className="mb-12">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              As we step into 2025, closet design has evolved far beyond simple storage solutions. Today's homeowners 
+              in Seattle and across the Pacific Northwest are seeking personalized, functional, and aesthetically 
+              pleasing closet spaces that reflect their lifestyle and values. At ProCraft Closets, we've identified 
+              the most significant trends shaping closet design this year.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">1. Smart Technology Integration</h2>
+            <p className="text-gray-700 mb-4">
+              The integration of smart technology in closet design has reached new heights in 2025. Homeowners are 
+              embracing automated lighting systems, climate control, and even AI-powered organization suggestions.
+            </p>
+            <ul className="list-disc pl-6 mb-6 text-gray-700">
+              <li className="mb-2">Motion-sensor LED lighting that adjusts based on time of day</li>
+              <li className="mb-2">Smart mirrors with built-in weather updates and outfit suggestions</li>
+              <li className="mb-2">Automated humidity control to protect delicate fabrics</li>
+              <li className="mb-2">Digital inventory systems that track your wardrobe</li>
+              <li className="mb-2">Voice-controlled storage retrieval systems</li>
+            </ul>
+            <p className="text-gray-700">
+              These technological advances not only enhance convenience but also help maintain the longevity of your 
+              clothing and accessories, making them particularly valuable for Seattle's varying climate conditions.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">2. Sustainable and Eco-Friendly Materials</h2>
+            <p className="text-gray-700 mb-4">
+              Environmental consciousness continues to drive closet design choices in 2025. Seattle homeowners are 
+              increasingly choosing sustainable materials that align with their eco-friendly values.
+            </p>
+            <div className="bg-green-50 p-6 rounded-lg mb-6">
+              <h3 className="text-xl font-semibold text-green-900 mb-3">Popular Sustainable Materials:</h3>
+              <ul className="list-disc pl-6 text-green-800">
+                <li className="mb-2">Reclaimed wood from local Pacific Northwest sources</li>
+                <li className="mb-2">Bamboo shelving and drawer systems</li>
+                <li className="mb-2">Recycled metal hardware and fixtures</li>
+                <li className="mb-2">Low-VOC finishes and paints</li>
+                <li className="mb-2">Cork flooring and wall treatments</li>
+              </ul>
+            </div>
+            <p className="text-gray-700">
+              These materials not only reduce environmental impact but also create unique, natural aesthetics that 
+              complement the Pacific Northwest's appreciation for organic beauty.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">3. Maximalist Storage Solutions</h2>
+            <p className="text-gray-700 mb-4">
+              Moving away from minimalist trends, 2025 sees a shift toward maximalist storage that celebrates 
+              collections and provides space for everything you love.
+            </p>
+            <ul className="list-disc pl-6 mb-6 text-gray-700">
+              <li className="mb-2">Floor-to-ceiling storage systems that utilize every inch</li>
+              <li className="mb-2">Specialized compartments for collections (shoes, bags, watches)</li>
+              <li className="mb-2">Pull-out drawers with custom dividers</li>
+              <li className="mb-2">Rotating carousel systems for corner spaces</li>
+              <li className="mb-2">Multi-level hanging systems for various garment lengths</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">4. Bold Color Schemes and Textures</h2>
+            <p className="text-gray-700 mb-4">
+              Gone are the days of all-white closets. 2025 brings bold, personality-driven color palettes that 
+              make getting dressed a joyful experience.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3">Trending Colors:</h3>
+                <ul className="text-blue-800">
+                  <li className="mb-1">Deep forest greens</li>
+                  <li className="mb-1">Rich burgundy and wine tones</li>
+                  <li className="mb-1">Warm terracotta and rust</li>
+                  <li className="mb-1">Navy blue with gold accents</li>
+                </ul>
+              </div>
+              <div className="bg-purple-50 p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-purple-900 mb-3">Popular Textures:</h3>
+                <ul className="text-purple-800">
+                  <li className="mb-1">Fluted wood panels</li>
+                  <li className="mb-1">Woven rattan details</li>
+                  <li className="mb-1">Brushed metal finishes</li>
+                  <li className="mb-1">Textured wallpapers</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">5. Multi-Functional Spaces</h2>
+            <p className="text-gray-700 mb-4">
+              Modern closets are becoming multi-purpose spaces that serve beyond clothing storage. Seattle homeowners 
+              are creating rooms that adapt to their diverse needs.
+            </p>
+            <ul className="list-disc pl-6 mb-6 text-gray-700">
+              <li className="mb-2">Built-in vanity areas with professional lighting</li>
+              <li className="mb-2">Workout spaces with equipment storage</li>
+              <li className="mb-2">Home office nooks with hidden desk solutions</li>
+              <li className="mb-2">Reading corners with built-in seating</li>
+              <li className="mb-2">Gift wrapping stations with supply storage</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">6. Luxury Hardware and Fixtures</h2>
+            <p className="text-gray-700 mb-4">
+              The details make the difference in 2025 closet design. High-end hardware and fixtures are becoming 
+              statement pieces that elevate the entire space.
+            </p>
+            <p className="text-gray-700 mb-6">
+              Trending hardware includes oversized brass pulls, matte black fixtures, crystal knobs, and custom 
+              leather handles that add sophistication and personal style to every closet component.
+            </p>
+          </section>
+
+          <section className="mb-12 bg-gray-50 p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Expert Tips from ProCraft Closets</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Planning Your 2025 Closet Renovation</h3>
+                <p className="text-gray-700 mb-3">
+                  Before incorporating these trends, assess your specific needs and lifestyle. Consider Seattle's 
+                  climate requirements and your daily routines to create a truly functional space.
+                </p>
+                <ul className="list-disc pl-6 text-gray-700">
+                  <li className="mb-2">Inventory your current wardrobe and accessories</li>
+                  <li className="mb-2">Measure your space accurately, including ceiling height</li>
+                  <li className="mb-2">Consider natural light sources and ventilation needs</li>
+                  <li className="mb-2">Plan for future wardrobe growth and seasonal storage</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Budget-Friendly Trend Integration</h3>
+                <p className="text-gray-700 mb-3">
+                  You don't need a complete renovation to incorporate 2025 trends. Start with these accessible updates:
+                </p>
+                <ul className="list-disc pl-6 text-gray-700">
+                  <li className="mb-2">Upgrade lighting with smart LED strips</li>
+                  <li className="mb-2">Add color through removable wallpaper or paint</li>
+                  <li className="mb-2">Replace hardware with trending finishes</li>
+                  <li className="mb-2">Install pull-out drawer organizers</li>
+                  <li className="mb-2">Add a statement mirror or artwork</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Working with Seattle's Climate</h3>
+                <p className="text-gray-700">
+                  Seattle's humidity and temperature variations require special considerations. Ensure proper 
+                  ventilation, choose moisture-resistant materials, and consider cedar elements for natural 
+                  pest deterrence and humidity control.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">The Future of Closet Design</h2>
+            <p className="text-gray-700 mb-4">
+              As we look toward the remainder of 2025 and beyond, closet design will continue evolving with 
+              technology, sustainability, and personalization at its core. The trends we're seeing today 
+              represent a fundamental shift toward viewing closets as essential living spaces rather than 
+              simple storage areas.
+            </p>
+            <p className="text-gray-700">
+              Seattle homeowners are leading this transformation, embracing innovative solutions that reflect 
+              their commitment to both functionality and environmental responsibility. Whether you're planning 
+              a complete closet renovation or simple updates, these trends offer inspiration for creating a 
+              space that truly enhances your daily life.
+            </p>
+          </section>
+        </main>
+
+        <footer className="mt-12 pt-8 border-t border-gray-200">
+          <div className="bg-blue-600 text-white p-8 rounded-lg text-center">
+            <h2 className="text-2xl font-bold mb-4">Ready to Transform Your Closet with 2025's Hottest Trends?</h2>
+            <p className="text-lg mb-6">
+              Let ProCraft Closets bring these innovative design trends to your Seattle home. Our expert team 
+              specializes in creating custom closet solutions that combine the latest trends with your unique 
+              needs and style preferences.
+            </p>
+            <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors w-full sm:w-auto">
+                Schedule Free Consultation
+              </button>
+              <button className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors w-full sm:w-auto">
+                View Our Portfolio
+              </button>
+            </div>
+            <p className="mt-6 text-blue-100">
+              Serving Seattle, Bellevue, Redmond, and surrounding areas • Licensed & Insured
             </p>
           </div>
-        </section>
-
-        {/* Trend 1 */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            1. Smart Closet Technology Integration
-          </h2>
-          <p className="text-lg text-slate-700 mb-4">
-            2025 marks the year smart technology becomes mainstream in closet design. Seattle homeowners 
-            are embracing automated lighting systems, digital inventory management, and climate control 
-            features that protect valuable clothing investments.
-          </p>
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-slate-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">LED Motion Sensors</h3>
-              <p className="text-slate-700">
-                Automatic lighting that activates when you approach, with customizable color temperatures 
-                to accurately display clothing colors.
-              </p>
-            </div>
-            <div className="bg-slate-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Smart Mirrors</h3>
-              <p className="text-slate-700">
-                Interactive mirrors with virtual try-on capabilities and outfit planning features that 
-                sync with your digital wardrobe inventory.
-              </p>
-            </div>
-          </div>
-          <p className="text-lg text-slate-700">
-            ProCraft Closets specializes in seamlessly integrating these technologies into custom designs 
-            that complement Seattle's modern architectural styles while maintaining clean, sophisticated aesthetics.
-          </p>
-        </section>
-
-        {/* Trend 2 */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            2. Sustainable and Eco-Friendly Materials
-          </h2>
-          <p className="text-lg text-slate-700 mb-6">
-            Environmental consciousness drives 2025's material choices. Seattle residents increasingly 
-            prefer closet systems made from reclaimed wood, bamboo, and low-VOC finishes that promote 
-            healthier indoor air quality.
-          </p>
-          <div className="bg-green-50 p-6 rounded-lg mb-6">
-            <h3 className="text-xl font-semibold text-green-900 mb-4">Popular Sustainable Materials:</h3>
-            <ul className="list-disc list-inside text-green-800 space-y-2">
-              <li>Reclaimed Pacific Northwest cedar and fir</li>
-              <li>Rapidly renewable bamboo shelving systems</li>
-              <li>Recycled metal hardware and accessories</li>
-              <li>Low-emission MDF with formaldehyde-free adhesives</li>
-              <li>Water-based stains and finishes</li>
-            </ul>
-          </div>
-          <p className="text-lg text-slate-700">
-            These materials not only reduce environmental impact but also create stunning, unique closets 
-            that reflect Seattle's commitment to sustainability and connection with nature.
-          </p>
-        </section>
-
-        {/* Trend 3 */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            3. Multi-Functional Closet Spaces
-          </h2>
-          <p className="text-lg text-slate-700 mb-6">
-            With Seattle's rising home values and smaller living spaces, 2025 closets serve multiple purposes. 
-            Modern designs incorporate office nooks, exercise equipment storage, and even meditation spaces 
-            within the closet footprint.
-          </p>
-          <div className="grid md:grid-cols-3 gap-4 mb-6">
-            <div className="bg-blue-50 p-4 rounded-lg text-center">
-              <h4 className="font-semibold text-blue-900 mb-2">Home Office Zone</h4>
-              <p className="text-blue-800 text-sm">
-                Built-in desk areas with charging stations and document storage
-              </p>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg text-center">
-              <h4 className="font-semibold text-purple-900 mb-2">Fitness Corner</h4>
-              <p className="text-purple-800 text-sm">
-                Dedicated storage for yoga mats, weights, and athletic wear
-              </p>
-            </div>
-            <div className="bg-amber-50 p-4 rounded-lg text-center">
-              <h4 className="font-semibold text-amber-900 mb-2">Beauty Station</h4>
-              <p className="text-amber-800 text-sm">
-                Integrated vanity with professional lighting and cosmetics organization
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Trend 4 */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            4. Bold Color Schemes and Textural Elements
-          </h2>
-          <p className="text-lg text-slate-700 mb-6">
-            Moving beyond neutral palettes, 2025 closet trends embrace rich jewel tones, dramatic blacks, 
-            and textural wallpapers. Seattle homeowners are creating closets that feel like luxury boutiques 
-            rather than simple storage spaces.
-          </p>
-          <div className="bg-slate-100 p-6 rounded-lg mb-6">
-            <h3 className="text-xl font-semibold text-slate-900 mb-4">Trending Color Palettes:</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div>
-                <h4 className="font-semibold text-slate-800 mb-2">Dramatic Darks</h4>
-                <p className="text-slate-700 text-sm mb-3">Deep navy, charcoal, and forest green create sophisticated backdrops</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-slate-800 mb-2">Warm Neutrals</h4>
-                <p className="text-slate-700 text-sm mb-3">Mushroom, sage, and warm white offer timeless elegance</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Trend 5 */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            5. Customizable and Modular Storage Systems
-          </h2>
-          <p className="text-lg text-slate-700 mb-6">
-            Flexibility defines 2025 closet design. Modular systems allow Seattle homeowners to reconfigure 
-            their closets as needs change, with adjustable shelving, removable dividers, and expandable 
-            components that grow with your wardrobe.
-          </p>
-          <p className="text-lg text-slate-700">
-            This trend particularly resonates with Seattle's dynamic lifestyle, accommodating everything 
-            from seasonal outdoor gear rotation to evolving work-from-home wardrobe needs.
-          </p>
-        </section>
-
-        {/* Expert Tips */}
-        <section className="mb-12 bg-slate-50 p-8 rounded-lg">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Expert Tips from ProCraft Closets Seattle
-          </h2>
-          <div className="space-y-6">
-            <div className="border-l-4 border-blue-500 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Maximize Vertical Space</h3>
-              <p className="text-slate-700">
-                In Seattle's often compact homes, utilize every inch of vertical space with floor-to-ceiling 
-                storage solutions. Consider pull-down rods for high-hanging items and step stools that 
-                integrate into the design.
-              </p>
-            </div>
-            <div className="border-l-4 border-green-500 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Plan for Seattle's Climate</h3>
-              <p className="text-slate-700">
-                Design your closet with Seattle's humidity in mind. Include cedar elements for natural 
-                moisture control and ensure adequate ventilation to protect clothing from mold and mildew.
-              </p>
-            </div>
-            <div className="border-l-4 border-purple-500 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Invest in Quality Hardware</h3>
-              <p className="text-slate-700">
-                Choose soft-close drawer slides and hinges that withstand daily use. Quality hardware 
-                ensures your investment remains functional and beautiful for decades.
-              </p>
-            </div>
-            <div className="border-l-4 border-red-500 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Consider Your Daily Routine</h3>
-              <p className="text-slate-700">
-                Design your closet layout around how you actually get dressed. Place frequently used 
-                items at eye level and group similar items together for maximum efficiency.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Seattle-Specific Considerations */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Closet Trends Tailored for Seattle Living
-          </h2>
-          <p className="text-lg text-slate-700 mb-6">
-            Seattle's unique lifestyle demands specific closet considerations. From rain gear organization 
-            to seasonal storage for hiking equipment, your closet should reflect the Pacific Northwest lifestyle.
-          </p>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-blue-900 mb-3">Weather-Ready Storage</h3>
-              <p className="text-blue-800">
-                Dedicated spaces for rain coats, umbrellas, and waterproof boots with proper drainage 
-                and ventilation systems.
-              </p>
-            </div>
-            <div className="bg-green-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-green-900 mb-3">Outdoor Gear Integration</h3>
-              <p className="text-green-800">
-                Specialized storage for hiking boots, backpacks, and seasonal sports equipment that 
-                keeps gear organized and accessible.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Conclusion */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Future-Proof Your Seattle Home with 2025 Closet Trends
-          </h2>
-          <p className="text-lg text-slate-700 mb-6">
-            The closet trends of 2025 represent more than aesthetic choices—they're investments in 
-            functionality, sustainability, and home value. By incorporating smart technology, sustainable 
-            materials, and flexible design elements, Seattle homeowners can create closets that adapt 
-            to changing needs while reflecting personal style.
-          </p>
-          <p className="text-lg text-slate-700 mb-6">
-            Whether you're renovating a Capitol Hill condo or designing storage for a Bellevue family home, 
-            these trends offer solutions that enhance daily life while increasing property value in 
-            Seattle's competitive real estate market.
-          </p>
-          <p className="text-lg text-slate-700">
-            The key to successful closet design lies in balancing trending elements with timeless 
-            functionality. Partner with experienced professionals who understand both current innovations 
-            and enduring design principles to create a closet that serves you well for years to come.
-          </p>
-        </section>
-
-        {/* CTA Section */}
-        <section className="bg-slate-900 text-white p-8 rounded-lg text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Transform Your Seattle Home with 2025's Hottest Closet Trends?
-          </h2>
-          <p className="text-xl mb-6 text-slate-200">
-            Let ProCraft Closets bring these innovative design trends to your home. Our Seattle-based 
-            team specializes in custom closet solutions that combine cutting-edge trends with practical 
-            Pacific Northwest living.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
-              Schedule Free Consultation
-            </button>
-            <button className="border-2 border-white hover:bg-white hover:text-slate-900 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
-              View Our Portfolio
-            </button>
-          </div>
-          <p className="text-slate-300 mt-4">
-            Serving Seattle, Bellevue, Redmond, and surrounding areas • Licensed & Insured • 10-Year Warranty
-          </p>
-        </section>
-
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-800 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-xl font-bold mb-2">ProCraft Closets Seattle</h3>
+        </footer>
+      </div>
+    </div>
+  );
+}

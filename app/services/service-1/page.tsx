@@ -1,334 +1,201 @@
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckIcon, ArrowRightIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
 
-export const metadata: Metadata = {
-  title: 'Custom Walk-In Closets - ProCraft Closets Seattle',
-  description: 'Transform your space with luxury custom walk-in closets in Seattle. Professional design, premium materials, lifetime warranty. Free consultation available.',
-}
-
-export default function Service1Page() {
+export default function CustomClosetDesignPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-gray-900 text-white py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold text-amber-400">
-              ProCraft Closets
-            </Link>
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <MapPinIcon className="h-5 w-5" />
-                <span>Seattle, WA</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <PhoneIcon className="h-5 w-5" />
-                <a href="tel:(206)555-0100" className="hover:text-amber-400">(206) 555-0100</a>
-              </div>
+      <header className="bg-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <div className="flex items-center">
+              <Link href="/" className="text-2xl font-bold text-gray-900">
+                ProCraft Closets
+              </Link>
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              <nav className="flex space-x-8">
+                <Link href="/" className="text-gray-700 hover:text-gray-900">Home</Link>
+                <Link href="/services" className="text-gray-700 hover:text-gray-900">Services</Link>
+                <Link href="/gallery" className="text-gray-700 hover:text-gray-900">Gallery</Link>
+                <Link href="/about" className="text-gray-700 hover:text-gray-900">About</Link>
+                <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
+              </nav>
+              <a href="tel:(206) 555-0100" className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                (206) 555-0100
+              </a>
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Custom Walk-In Closets
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Transform your bedroom into a luxury suite with our custom walk-in closet solutions. 
-                Maximize storage, enhance organization, and create your personal dressing room sanctuary.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
-                  Get Free Consultation
-                </button>
-                <button className="border-2 border-gray-300 hover:border-amber-600 text-gray-700 px-8 py-4 rounded-lg font-semibold transition-colors">
-                  View Gallery
-                </button>
-              </div>
-            </div>
-            <div className="relative h-96 lg:h-[500px]">
-              <Image
-                src="/api/placeholder/600/500"
-                alt="Luxury walk-in closet with custom shelving and lighting"
-                fill
-                className="object-cover rounded-lg shadow-xl"
-              />
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Custom Closet Design & Installation
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+              Transform your storage space with expertly crafted custom closets tailored to your lifestyle and needs in Seattle, WA
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:(206) 555-0100" className="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors">
+                Call Now: (206) 555-0100
+              </a>
+              <a href="#contact" className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                Free Consultation
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Custom Walk-In Closets?
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Why Choose ProCraft Custom Closets?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience the ultimate in storage luxury with benefits that transform your daily routine
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Experience the difference of professional custom closet design with benefits that last a lifetime
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "🏠",
-                title: "Maximize Space Efficiency",
-                description: "Utilize every square inch with custom layouts designed specifically for your room dimensions and storage needs."
-              },
-              {
-                icon: "✨",
-                title: "Luxury Hotel Experience",
-                description: "Create a five-star hotel experience in your own home with premium finishes and professional organization."
-              },
-              {
-                icon: "👔",
-                title: "Perfect Organization",
-                description: "Dedicated spaces for suits, dresses, shoes, accessories, and jewelry with specialized storage solutions."
-              },
-              {
-                icon: "💡",
-                title: "LED Lighting Integration",
-                description: "Illuminate every corner with energy-efficient LED lighting that showcases your wardrobe beautifully."
-              },
-              {
-                icon: "🪞",
-                title: "Full-Length Mirrors",
-                description: "Strategically placed mirrors create the illusion of more space while providing perfect outfit viewing."
-              },
-              {
-                icon: "📈",
-                title: "Increase Home Value",
-                description: "Add significant value to your property with a luxury amenity that buyers actively seek."
-              }
-            ].map((benefit, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-                <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2zm12-3c0 1.105-.895 2-2 2s-2-.895-2-2 .895-2 2-2 2 .895 2 2zM9 10l12-3" />
+                </svg>
               </div>
-            ))}
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Maximize Storage Space</h3>
+              <p className="text-gray-600">
+                Our custom designs utilize every inch of available space, doubling or tripling your storage capacity compared to standard closets.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Premium Materials</h3>
+              <p className="text-gray-600">
+                We use only the highest quality materials including solid wood, premium hardware, and durable finishes that stand the test of time.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Increase Home Value</h3>
+              <p className="text-gray-600">
+                Custom closets provide an excellent return on investment, typically adding 6-10% to your home's value while improving daily functionality.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Personalized Design</h3>
+              <p className="text-gray-600">
+                Every closet is designed specifically for your lifestyle, preferences, and wardrobe needs - no two closets are the same.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Expert Installation</h3>
+              <p className="text-gray-600">
+                Our certified installers ensure perfect fit and finish with meticulous attention to detail and minimal disruption to your home.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Lifetime Warranty</h3>
+              <p className="text-gray-600">
+                We stand behind our work with a comprehensive lifetime warranty on craftsmanship and a 25-year warranty on materials.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Our 5-Step Design Process
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From initial consultation to final installation, we ensure a seamless experience
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            {[
-              {
-                step: "01",
-                title: "Free In-Home Consultation",
-                description: "Our design expert visits your home to assess the space, understand your needs, and discuss style preferences.",
-                duration: "1-2 hours"
-              },
-              {
-                step: "02",
-                title: "Custom Design & 3D Rendering",
-                description: "We create detailed 3D renderings showing exactly how your walk-in closet will look and function.",
-                duration: "3-5 days"
-              },
-              {
-                step: "03",
-                title: "Material Selection & Approval",
-                description: "Choose from premium wood finishes, hardware options, and accessories to match your style.",
-                duration: "1-2 days"
-              },
-              {
-                step: "04",
-                title: "Precision Manufacturing",
-                description: "Your closet components are crafted in our Seattle facility using premium materials and precise measurements.",
-                duration: "2-3 weeks"
-              },
-              {
-                step: "05",
-                title: "Professional Installation",
-                description: "Our certified installers complete your walk-in closet with attention to every detail and final quality check.",
-                duration: "1-2 days"
-              }
-            ].map((process, index) => (
-              <div key={index} className="flex gap-8 mb-12 last:mb-0">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    {process.step}
-                  </div>
-                </div>
-                <div className="flex-grow">
-                  <div className="flex items-center gap-4 mb-2">
-                    <h3 className="text-2xl font-semibold text-gray-900">{process.title}</h3>
-                    <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">
-                      {process.duration}
-                    </span>
-                  </div>
-                  <p className="text-gray-600 text-lg">{process.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Guide */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Investment Guide
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Simple 5-Step Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transparent pricing for your custom walk-in closet investment
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              From initial consultation to final installation, we make the process seamless and stress-free
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                tier: "Essential",
-                price: "$3,500 - $6,000",
-                size: "6' x 6' - 8' x 8'",
-                features: [
-                  "Basic shelving system",
-                  "Single hanging rod",
-                  "Shoe storage rack",
-                  "Standard LED lighting",
-                  "Melamine finish",
-                  "Basic installation"
-                ],
-                popular: false
-              },
-              {
-                tier: "Premium",
-                price: "$6,000 - $12,000",
-                size: "8' x 8' - 10' x 12'",
-                features: [
-                  "Custom shelving configuration",
-                  "Double-tier hanging system",
-                  "Pull-out drawers",
-                  "Jewelry compartments",
-                  "Motion-sensor lighting",
-                  "Wood veneer finish",
-                  "Full-length mirror",
-                  "Premium installation"
-                ],
-                popular: true
-              },
-              {
-                tier: "Luxury",
-                price: "$12,000 - $25,000+",
-                size: "10' x 12' and larger",
-                features: [
-                  "Fully custom design",
-                  "Premium hardwood finish",
-                  "Motorized features",
-                  "Climate control integration",
-                  "Custom seating area",
-                  "Chandelier lighting",
-                  "Safe integration",
-                  "White-glove installation"
-                ],
-                popular: false
-              }
-            ].map((tier, index) => (
-              <div key={index} className={`rounded-lg p-8 ${tier.popular ? 'bg-amber-50 border-2 border-amber-600' : 'bg-gray-50 border border-gray-200'}`}>
-                {tier.popular && (
-                  <div className="bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium text-center mb-4">
-                    Most Popular
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.tier}</h3>
-                <div className="text-3xl font-bold text-amber-600 mb-2">{tier.price}</div>
-                <div className="text-gray-600 mb-6">{tier.size}</div>
-                <ul className="space-y-3">
-                  {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-3">
-                      <CheckIcon className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
+          <div className="space-y-12">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">1</div>
+                  <h3 className="text-2xl font-semibold text-gray-900">Free In-Home Consultation</h3>
+                </div>
+                <p className="text-gray-600 text-lg">
+                  Our design experts visit your home to assess your space, understand your needs, and discuss your vision. We'll take detailed measurements and photos to create the perfect design plan.
+                </p>
+                <ul className="mt-4 space-y-2">
+                  <li className="flex items-center text-gray-600">
+                    <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    No obligation assessment
+                  </li>
+                  <li className="flex items-center text-gray-600">
+                    <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Professional space analysis
+                  </li>
+                  <li className="flex items-center text-gray-600">
+                    <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Lifestyle needs discussion
+                  </li>
                 </ul>
-                <button className={`w-full mt-8 py-3 px-6 rounded-lg font-semibold transition-colors ${
-                  tier.popular 
-                    ? 'bg-amber-600 hover:bg-amber-700 text-white' 
-                    : 'bg-white border-2 border-gray-300 hover:border-amber-600 text-gray-700'
-                }`}>
-                  Get Quote
-                </button>
               </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">
-              All prices include design consultation, materials, and professional installation
-            </p>
-            <p className="text-sm text-gray-500">
-              Final pricing depends on specific requirements, materials selected, and installation complexity
-            </p>
-          </div>
-        </div>
-      </section>
+              <div className="md:w-1/2">
+                <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+                  <span className="text-gray-500">Consultation Image</span>
+                </div>
+              </div>
+            </div>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Get answers to common questions about custom walk-in closets
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-8">
-            {[
-              {
-                question: "How much space do I need for a walk-in closet?",
-                answer: "The minimum recommended space is 6' x 6' (36 square feet) for a basic walk-in closet. However, 8' x 8' or larger provides more comfortable movement and storage options. We can work with almost any space and create efficient solutions for smaller areas."
-              },
-              {
-                question: "How long does the installation process take?",
-                answer: "Most walk-in closet installations take 1-2 days depending on complexity. The entire process from consultation to completion typically takes 4-6 weeks, including design approval and manufacturing time."
-              },
-              {
-                question: "Can you work around existing electrical and plumbing?",
-                answer: "Yes, our designers are experienced in working around existing utilities. We can incorporate outlets, switches, and even plumbing fixtures into the design. We also coordinate with electricians if additional lighting circuits are needed."
-              },
-              {
-                question: "What materials do you use for the closet systems?",
-                answer: "We offer various materials including high-quality melamine, wood veneers, and solid hardwoods. All materials are moisture-resistant and designed for long-term durability. Hardware includes soft-close drawer slides and adjustable shelving systems."
-              },
-              {
-                question: "Do you provide a warranty on your work?",
-                answer: "Yes, we provide a comprehensive warranty: 10 years on all materials and craftsmanship, 5 years on hardware and accessories, and lifetime warranty on structural components. We also offer ongoing maintenance services."
-              },
-              {
-                question: "Can I modify or expand my closet system later?",
-                answer: "Absolutely! Our modular design approach allows for future modifications and expansions. We maintain detailed records of your installation and can easily add components or reconfigure layouts as your needs change."
-              },
-              {
-                question: "Do you handle permits and building codes?",
-                answer: "We handle all necessary permits and ensure compliance with Seattle building codes. Our installations meet all structural and safety requirements, and we coordinate inspections when required."
-              },
-              {
-                question: "What's included in the free consultation?",
-                answer: "Your free consultation includes space measurement, needs assessment, preliminary design concepts, material samples, and a detailed quote. There's no obligation, and you'll receive a digital copy of measurements and basic layout options."
-              }
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">2</div>
+                  <h3 className="text-2xl font-semibold text-gray-900">Custom Design & 3D Rendering</h3>
+                </div>
+                <p className="text-gray-600 text-lg">
+                  Our designers create a detailed 3D rendering of your custom closet, allowing you to visualize the final result before any work begins. We'll refine the design until it's perfect.
+                </p>
+                <ul className="mt-4 space-y-

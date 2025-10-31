@@ -1,267 +1,210 @@
-import type { Metadata } from 'next'
+import React from 'react';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | ProCraft Closets - Seattle Custom Closets',
-  description: 'Get answers to common questions about ProCraft Closets custom closet installation, design services, pricing, and process in Seattle, WA. Expert closet solutions since 2015.',
-  keywords: 'custom closets FAQ, Seattle closet installation questions, closet design process, closet pricing Seattle, walk-in closets FAQ, reach-in closets',
+  title: 'Frequently Asked Questions - ProCraft Closets Seattle | Custom Closet FAQ',
+  description: 'Find answers to common questions about ProCraft Closets custom closet design, installation, pricing, and services in Seattle, WA. Get expert closet solutions.',
+  keywords: 'custom closets Seattle FAQ, closet installation questions, closet design pricing Seattle, ProCraft Closets FAQ, Seattle closet company questions',
   openGraph: {
-    title: 'ProCraft Closets FAQ - Your Questions Answered',
-    description: 'Find answers to all your questions about custom closet design, installation, and services in Seattle. Professional closet solutions tailored to your needs.',
+    title: 'ProCraft Closets Seattle FAQ - Your Closet Questions Answered',
+    description: 'Get answers to all your custom closet questions from Seattle\'s premier closet design company.',
+    url: 'https://procraftclosets.com/faq',
     type: 'website',
-    locale: 'en_US',
-    siteName: 'ProCraft Closets'
   },
   alternates: {
-    canonical: 'https://procraftclosets.com/faq'
-  }
-}
+    canonical: 'https://procraftclosets.com/faq',
+  },
+};
 
 interface FAQItem {
-  question: string
-  answer: string
-  category: 'services' | 'pricing' | 'process' | 'areas' | 'qualifications' | 'guarantees'
+  id: string;
+  question: string;
+  answer: string;
+  category: 'services' | 'pricing' | 'process' | 'areas' | 'qualifications' | 'guarantees';
 }
 
 const faqData: FAQItem[] = [
   {
-    question: "What services does ProCraft Closets offer in Seattle?",
-    answer: "ProCraft Closets provides comprehensive custom closet solutions including walk-in closet design and installation, reach-in closets, pantry organization systems, home office storage, garage storage solutions, and closet renovation services throughout the Seattle metro area.",
-    category: "services"
+    id: 'what-services-does-procraft-offer',
+    question: 'What services does ProCraft Closets offer in Seattle?',
+    answer: 'ProCraft Closets provides comprehensive custom closet solutions including walk-in closets, reach-in closets, pantry organization systems, home office storage, garage storage solutions, and wardrobe design. We handle everything from initial consultation and 3D design to manufacturing and professional installation throughout the Seattle metropolitan area.',
+    category: 'services'
   },
   {
-    question: "How much does a custom closet cost in Seattle?",
-    answer: "Custom closet pricing in Seattle typically ranges from $1,500 to $8,000 depending on size, materials, and features. We offer free in-home consultations to provide accurate estimates based on your specific needs and space requirements.",
-    category: "pricing"
+    id: 'how-much-does-custom-closet-cost-seattle',
+    question: 'How much does a custom closet cost in Seattle?',
+    answer: 'Custom closet costs in Seattle typically range from $1,200 to $5,000 for reach-in closets and $2,500 to $15,000 for walk-in closets. The final price depends on size, materials, accessories, and complexity. ProCraft Closets offers free consultations with detailed pricing estimates tailored to your specific needs and budget.',
+    category: 'pricing'
   },
   {
-    question: "What's included in your design consultation?",
-    answer: "Our complimentary design consultation includes measuring your space, discussing your storage needs and lifestyle, reviewing material options, creating a custom design proposal, and providing a detailed quote. This typically takes 60-90 minutes in your home.",
-    category: "process"
+    id: 'what-is-closet-design-process',
+    question: 'What is ProCraft Closets design process like?',
+    answer: 'Our design process begins with a free in-home consultation where we measure your space and discuss your needs. Next, we create detailed 3D renderings showing your custom closet design. After approval, we manufacture your closet using premium materials and schedule professional installation. The entire process typically takes 3-4 weeks from design approval to completion.',
+    category: 'process'
   },
   {
-    question: "Which areas around Seattle do you serve?",
-    answer: "We serve the entire Seattle metropolitan area including Bellevue, Redmond, Kirkland, Bothell, Lynnwood, Edmonds, Shoreline, Renton, Kent, Federal Way, Tacoma, and surrounding King County and Snohomish County communities.",
-    category: "areas"
+    id: 'areas-served-seattle-closets',
+    question: 'What areas around Seattle do you serve?',
+    answer: 'ProCraft Closets serves the entire Seattle metropolitan area including Bellevue, Redmond, Kirkland, Bothell, Renton, Federal Way, Tacoma, Everett, Lynnwood, Sammamish, Issaquah, Mercer Island, and surrounding King County and Snohomish County communities. We provide the same high-quality service throughout the Puget Sound region.',
+    category: 'areas'
   },
   {
-    question: "Are your installers licensed and insured?",
-    answer: "Yes, ProCraft Closets is fully licensed, bonded, and insured in Washington State. All our installers are experienced professionals who undergo background checks and continuous training to ensure quality workmanship and your peace of mind.",
-    category: "qualifications"
+    id: 'procraft-closets-qualifications-certifications',
+    question: 'What qualifications and certifications does ProCraft Closets have?',
+    answer: 'ProCraft Closets is fully licensed, bonded, and insured in Washington State. Our team includes certified closet designers with over 15 years of experience, and we are members of the National Association of Closet & Storage Professionals. All our installers are background-checked professionals who complete ongoing training on the latest installation techniques.',
+    category: 'qualifications'
   },
   {
-    question: "What warranty do you provide on custom closets?",
-    answer: "We offer a comprehensive warranty including lifetime warranty on all hardware, 5-year warranty on wood components, and 1-year warranty on installation workmanship. This ensures your investment is protected and your closet will perform beautifully for years to come.",
-    category: "guarantees"
+    id: 'warranty-guarantee-custom-closets',
+    question: 'What warranty and guarantees do you offer on custom closets?',
+    answer: 'ProCraft Closets provides a comprehensive lifetime warranty on all hardware and a 5-year warranty on craftsmanship and materials. We guarantee 100% satisfaction with our work and offer a 30-day adjustment period after installation. If any issues arise, we will return promptly to make things right at no additional cost.',
+    category: 'guarantees'
   },
   {
-    question: "How long does it take to install a custom closet?",
-    answer: "Most custom closet installations take 4-6 hours for a standard reach-in closet and 6-8 hours for walk-in closets. Complex designs or multiple closets may require additional time. We'll provide an accurate timeline during your consultation.",
-    category: "process"
+    id: 'how-long-closet-installation-take',
+    question: 'How long does closet installation take?',
+    answer: 'Most closet installations are completed in one day. Simple reach-in closets typically take 2-4 hours, while complex walk-in closets may take 6-8 hours. Large master bedroom suites or multiple closet projects may require 1-2 days. We always provide accurate timeframes during your consultation and work efficiently to minimize disruption to your daily routine.',
+    category: 'process'
   },
   {
-    question: "Do you offer walk-in closet designs?",
-    answer: "Absolutely! We specialize in luxury walk-in closet designs featuring custom shelving, hanging rods, drawers, shoe storage, jewelry organization, islands, seating areas, and lighting solutions. Each design is tailored to maximize your space and storage needs.",
-    category: "services"
+    id: 'materials-used-custom-closets',
+    question: 'What materials do you use for custom closets?',
+    answer: 'We use premium materials including solid wood, high-grade plywood, and durable melamine finishes. Our hardware features soft-close drawers, adjustable shelving, and commercial-grade hanging rods. All materials are sourced from reputable suppliers and chosen for durability, functionality, and aesthetic appeal to ensure your closet lasts for decades.',
+    category: 'services'
   },
   {
-    question: "What materials do you use for custom closets?",
-    answer: "We use high-quality materials including solid wood, engineered wood, melamine, and premium laminates. Popular finishes include white, espresso, natural wood tones, and contemporary colors. All materials are selected for durability and aesthetic appeal.",
-    category: "services"
+    id: 'free-consultation-what-to-expect',
+    question: 'What should I expect during the free consultation?',
+    answer: 'During your free consultation, our designer will visit your home to measure the space, assess your storage needs, and discuss your style preferences and budget. We will show you material samples, discuss layout options, and answer all your questions. The consultation typically takes 60-90 minutes and you will receive a detailed proposal within 2-3 business days.',
+    category: 'process'
   },
   {
-    question: "Can you work with small closet spaces?",
-    answer: "Yes, we excel at maximizing small closet spaces! Our designers are experts at creating efficient storage solutions for compact reach-in closets, using vertical space, corner solutions, and multi-functional components to dramatically increase storage capacity.",
-    category: "services"
+    id: 'closet-accessories-available',
+    question: 'What closet accessories and features are available?',
+    answer: 'ProCraft Closets offers extensive accessories including pull-out shoe racks, jewelry drawers with dividers, tie and belt organizers, LED lighting systems, full-length mirrors, valet rods, hampers, and specialty hangers. We can customize any accessory to match your specific organizational needs and lifestyle preferences.',
+    category: 'services'
   },
   {
-    question: "Do you provide pantry organization systems?",
-    answer: "Yes, we design and install custom pantry organization systems with adjustable shelving, pull-out drawers, spice racks, wine storage, and specialized storage for different food items. Our pantries make meal planning and cooking more efficient.",
-    category: "services"
+    id: 'small-closet-organization-solutions',
+    question: 'Do you work with small closets and tight spaces?',
+    answer: 'Absolutely! ProCraft Closets specializes in maximizing storage in small spaces. We use innovative design techniques like double-hang systems, corner solutions, and space-efficient accessories to dramatically increase storage capacity even in the smallest closets. Many clients are amazed at how much storage we can create in compact areas.',
+    category: 'services'
   },
   {
-    question: "What's the difference between wire and wood closet systems?",
-    answer: "Wood systems offer a premium, furniture-quality appearance with solid surfaces and unlimited design options, while wire systems are more budget-friendly and offer good ventilation. We recommend wood systems for their durability, aesthetics, and resale value.",
-    category: "services"
+    id: 'payment-options-financing-available',
+    question: 'What payment options and financing do you offer?',
+    answer: 'We accept cash, check, and all major credit cards. ProCraft Closets also offers flexible financing options with approved credit, including 0% interest plans for qualified customers. We require a 50% deposit to begin manufacturing with the balance due upon completion. We will discuss all payment options during your consultation.',
+    category: 'pricing'
   },
   {
-    question: "How do I prepare for a closet installation?",
-    answer: "Before installation, remove all items from the closet, ensure access to the space is clear, and remove any existing shelving or rods. We'll provide a detailed preparation checklist after your design approval to ensure a smooth installation process.",
-    category: "process"
+    id: 'how-to-prepare-for-installation',
+    question: 'How should I prepare for closet installation day?',
+    answer: 'Before installation, please remove all items from your closet and clear a path from the entrance to the work area. Our team will handle all necessary prep work including removing old shelving and protecting surrounding areas. We recommend having alternative storage ready for your clothes during the installation day.',
+    category: 'process'
   },
   {
-    question: "Can you add lighting to my custom closet?",
-    answer: "Yes, we can incorporate LED lighting solutions including closet rods with integrated lighting, shelf lighting, motion-sensor lights, and overhead fixtures. Proper lighting enhances functionality and creates a luxurious closet experience.",
-    category: "services"
+    id: 'custom-vs-prefab-closet-systems',
+    question: 'What is the difference between custom and prefab closet systems?',
+    answer: 'Custom closets are built specifically for your exact space and needs, offering unlimited design possibilities and premium materials. Prefab systems are mass-produced with limited sizes and configurations. Custom closets provide better space utilization, higher quality materials, professional installation, and typically last much longer while adding more value to your home.',
+    category: 'services'
   },
   {
-    question: "Do you offer financing options for closet projects?",
-    answer: "We offer flexible financing options to make your custom closet project affordable. This includes 0% interest financing for qualified customers and extended payment plans. We'll discuss financing options during your consultation.",
-    category: "pricing"
+    id: 'closet-design-trends-seattle',
+    question: 'What are the latest closet design trends in Seattle?',
+    answer: 'Current trends in Seattle include integrated LED lighting, mixed materials combining wood and metal, sustainable materials, smart storage solutions, and spa-like finishes. Many clients are requesting charging stations for devices, specialized storage for activewear, and flexible systems that can adapt as needs change over time.',
+    category: 'services'
   },
   {
-    question: "What makes ProCraft different from other closet companies?",
-    answer: "ProCraft Closets stands out through our personalized design approach, superior craftsmanship, local Seattle expertise, comprehensive warranties, and commitment to customer satisfaction. We're a locally-owned business that takes pride in every installation.",
-    category: "qualifications"
+    id: 'timeline-from-consultation-to-completion',
+    question: 'What is the typical timeline from consultation to completion?',
+    answer: 'The complete process typically takes 4-6 weeks. This includes 1 week for design and approval, 2-3 weeks for manufacturing your custom components, and 1 day for installation. During busy seasons, timelines may extend slightly. We always provide accurate scheduling during your consultation and keep you updated throughout the process.',
+    category: 'process'
   },
   {
-    question: "Can you renovate an existing closet system?",
-    answer: "Absolutely! We can renovate, upgrade, or completely redesign existing closet systems. This might include adding components, changing layouts, updating finishes, or converting wire systems to premium wood systems while working within your budget.",
-    category: "services"
+    id: 'pantry-organization-systems',
+    question: 'Do you design pantry organization systems?',
+    answer: 'Yes! ProCraft Closets creates custom pantry solutions including adjustable shelving, pull-out drawers, spice racks, wine storage, and specialized containers. We design pantries for maximum efficiency with easy access to all items and can accommodate any pantry size from small reach-in spaces to large walk-in pantries.',
+    category: 'services'
   },
   {
-    question: "How far in advance should I schedule my project?",
-    answer: "We recommend scheduling 2-3 weeks in advance, though we can often accommodate rush projects. Design consultations can typically be scheduled within a few days, and installation follows 1-2 weeks after design approval and material ordering.",
-    category: "process"
+    id: 'environmental-sustainability-practices',
+    question: 'What environmental and sustainability practices do you follow?',
+    answer: 'ProCraft Closets is committed to sustainability through responsible material sourcing, including FSC-certified wood and low-VOC finishes. We minimize waste through precise manufacturing, recycle materials when possible, and design durable systems that last for decades. We also offer eco-friendly material options for environmentally conscious clients.',
+    category: 'qualifications'
   },
   {
-    question: "Do you install closet doors?",
-    answer: "While we focus on interior closet organization systems, we can recommend trusted partners for closet door installation including sliding doors, bi-fold doors, and barn doors that complement your custom closet design.",
-    category: "services"
+    id: 'child-safe-closet-design-options',
+    question: 'Do you offer child-safe closet design options?',
+    answer: 'Absolutely! We prioritize child safety with features like rounded edges, soft-close mechanisms to prevent finger pinching, secure mounting systems, and age-appropriate heights for accessible storage. We can also include growing systems that adjust as children get older and specialized storage for toys, books, and school supplies.',
+    category: 'services'
   },
   {
-    question: "What if I'm not satisfied with my closet installation?",
-    answer: "Customer satisfaction is our top priority. If you're not completely satisfied, we'll work with you to address any concerns and make necessary adjustments until you're happy with your closet. Your satisfaction is guaranteed.",
-    category: "guarantees"
+    id: 'home-office-storage-solutions',
+    question: 'Can you create home office storage solutions?',
+    answer: 'Yes, ProCraft Closets designs comprehensive home office storage including built-in desks, file systems, book storage, supply organization, and technology integration. We create productive workspaces with efficient storage that keeps your office organized and professional-looking while maximizing available space.',
+    category: 'services'
   },
   {
-    question: "Can you design closets for children's rooms?",
-    answer: "Yes, we create custom closets designed specifically for children with lower hanging rods, accessible shelving, toy storage, and adjustable components that can grow with your child. Safety is always our priority in children's closet designs.",
-    category: "services"
+    id: 'luxury-closet-features-high-end',
+    question: 'What luxury features can you include in high-end closets?',
+    answer: 'Our luxury closets can include features like center islands with granite tops, automatic lighting sensors, motorized tie racks, climate control systems, built-in safes, leather-lined jewelry drawers, custom mirror installations, seating areas, and premium hardware finishes. We work with you to create a truly luxurious dressing experience.',
+    category: 'services'
   },
   {
-    question: "Do you offer same-day consultations?",
-    answer: "While we typically schedule consultations a few days in advance, we can often accommodate same-day or next-day appointments for urgent projects. Call us to check availability for expedited consultation scheduling.",
-    category: "process"
+    id: 'maintenance-care-custom-closets',
+    question: 'How do I maintain and care for my custom closet?',
+    answer: 'Custom closets require minimal maintenance. Regular dusting with a soft cloth and occasional cleaning with mild soap and water will keep surfaces looking new. Avoid harsh chemicals and abrasives. We provide detailed care instructions and are always available to answer maintenance questions or provide touch-up services if needed.',
+    category: 'guarantees'
   },
   {
-    question: "What's included in your installation service?",
-    answer: "Our installation service includes delivery of materials, professional installation, cleanup of work area, disposal of packaging materials, and a walkthrough to ensure everything meets your expectations. We handle everything from start to finish.",
-    category: "process"
+    id: 'color-finish-options-available',
+    question: 'What color and finish options are available?',
+    answer: 'We offer an extensive range of colors and finishes including classic whites, rich wood tones, contemporary grays, and bold accent colors. Finish options include matte, satin, and high-gloss surfaces. We can match existing cabinetry or create custom color combinations. All finishes are durable and resistant to wear and fading.',
+    category: 'services'
   },
   {
-    question: "Can you work around my schedule for installation?",
-    answer: "We offer flexible scheduling including evenings and weekends to accommodate busy schedules. Most installations can be completed while you're at work, though we recommend being present for the final walkthrough.",
-    category: "process"
+    id: 'emergency-repairs-service-calls',
+    question: 'Do you provide emergency repairs and service calls?',
+    answer: 'Yes, ProCraft Closets provides ongoing service support for all our installations. While true emergencies are rare with our quality construction, we offer priority service calls for any issues that may arise. Most problems can be resolved quickly, and we stock common replacement parts to minimize wait times.',
+    category: 'guarantees'
   },
   {
-    question: "Do you provide garage storage solutions?",
-    answer: "Yes, we design comprehensive garage storage systems including wall-mounted cabinets, overhead storage, workbenches, sports equipment storage, and seasonal item organization to help you reclaim your garage space.",
-    category: "services"
+    id: 'insurance-claims-closet-damage',
+    question: 'Do you work with insurance claims for closet damage?',
+    answer: 'Yes, we regularly work with insurance companies for closet repairs and replacements due to water damage, fire, or other covered events. We can provide detailed estimates, work directly with adjusters, and ensure all repairs meet or exceed original specifications. Our documentation helps streamline the insurance process.',
+    category: 'qualifications'
   },
   {
-    question: "How do you handle changes to the design after approval?",
-    answer: "We understand that sometimes changes are needed. Minor modifications can often be accommodated, though significant changes may affect timeline and pricing. We'll discuss any change requests and provide updated proposals as needed.",
-    category: "process"
+    id: 'seasonal-storage-solutions',
+    question: 'Can you design seasonal storage solutions?',
+    answer: 'Absolutely! We create smart seasonal storage with features like high shelving for out-of-season items, vacuum storage compartments, cedar-lined sections for delicate fabrics, and easily accessible areas for frequently rotated items. Our designs help you efficiently manage seasonal clothing, sports equipment, and holiday items.',
+    category: 'services'
   },
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept cash, check, all major credit cards, and offer financing options. A deposit is typically required upon design approval, with final payment due upon completion of installation to your satisfaction.",
-    category: "pricing"
+    id: 'ada-accessible-closet-design',
+    question: 'Do you offer ADA-accessible closet designs?',
+    answer: 'Yes, ProCraft Closets designs fully ADA-compliant closets with appropriate reach ranges, accessible hardware, wider aisles, and specialized features for mobility devices. We understand accessibility requirements and create beautiful, functional closets that accommodate wheelchairs, walkers, and other mobility aids while maintaining style and efficiency.',
+    category: 'services'
   },
   {
-    question: "Do you offer home office storage solutions?",
-    answer: "Yes, we create custom home office storage including built-in desks, filing systems, book storage, supply organization, and multi-functional storage solutions that help create an efficient and organized workspace.",
-    category: "services"
+    id: 'rental-property-closet-solutions',
+    question: 'Do you work on rental properties and investment homes?',
+    answer: 'Yes, we work with property owners and investors to create attractive, durable closet systems that appeal to tenants and add property value. We offer cost-effective solutions that balance quality with investment return and can work with property managers to coordinate installations around tenant schedules.',
+    category: 'services'
   },
   {
-    question: "How long have you been serving the Seattle area?",
-    answer: "ProCraft Closets has been proudly serving the Seattle metropolitan area since 2015. Our experience with local homes, building styles, and customer preferences helps us deliver exceptional results tailored to Pacific Northwest living.",
-    category: "qualifications"
+    id: 'closet-lighting-options-led',
+    question: 'What lighting options do you offer for closets?',
+    answer: 'We offer comprehensive LED lighting solutions including motion-activated systems, under-shelf lighting, accent lighting, and natural daylight spectrum bulbs. Options include battery-operated systems for easy installation and hardwired systems for permanent solutions. All lighting is energy-efficient and designed to showcase your wardrobe beautifully.',
+    category: 'services'
   },
   {
-    question: "Can you match existing cabinetry in my home?",
-    answer: "Yes, we can match or complement existing cabinetry finishes and styles throughout your home. Our design team works to ensure your new closet system integrates seamlessly with your home's existing aesthetic.",
-    category: "services"
+    id: 'virtual-consultations-available',
+    question: 'Do you offer virtual consultations and design services?',
+    answer: 'Yes, we offer virtual consultations for clients who prefer remote meetings or have scheduling constraints. Using video calls and photo sharing, we can assess your space, discuss needs, and provide initial design concepts. However, we always recommend an in-person visit for final measurements and installation.',
+    category: 'process'
   },
   {
-    question: "What happens if there are issues after installation?",
-    answer: "We stand behind our work with comprehensive warranties and responsive service. If any issues arise, simply contact us and we'll promptly address any problems covered under warranty or provide solutions for your peace of mind.",
-    category: "guarantees"
-  },
-  {
-    question: "Do you offer eco-friendly closet options?",
-    answer: "Yes, we offer environmentally conscious options including sustainably sourced wood, low-VOC finishes, and recyclable materials. We can discuss eco-friendly alternatives that align with your environmental values during consultation.",
-    category: "services"
-  },
-  {
-    question: "Can you design closets for master bedrooms?",
-    answer: "Absolutely! We specialize in luxurious master bedroom closets including his and hers sections, jewelry storage, tie and belt organization, shoe displays, handbag storage, and elegant design elements that create a boutique-like experience.",
-    category: "services"
-  },
-  {
-    question: "How do you ensure accurate measurements?",
-    answer: "Our experienced designers use professional measuring tools and techniques, account for wall irregularities, check for plumb and level, and verify measurements multiple times. This ensures perfect fit and professional installation results.",
-    category: "process"
-  },
-  {
-    question: "What if my closet has unusual dimensions?",
-    answer: "Custom closets are our specialty! We regularly work with unusual dimensions, angled walls, sloped ceilings, and challenging spaces. Our designers excel at creating solutions that maximize even the most unique closet configurations.",
-    category: "services"
-  },
-  {
-    question: "Do you provide organization tips after installation?",
-    answer: "Yes, we provide guidance on how to best organize your new closet system, including tips for maintaining organization, seasonal rotation suggestions, and advice on maximizing your storage investment for long-term satisfaction.",
-    category: "process"
-  },
-  {
-    question: "Can you install closets in condos and apartments?",
-    answer: "Yes, we install custom closets in condos, apartments, and townhomes throughout Seattle. We work with property management requirements when needed and can design systems that enhance rental properties or personal residences.",
-    category: "areas"
-  },
-  {
-    question: "What references can you provide from Seattle customers?",
-    answer: "We're happy to provide references from satisfied Seattle-area customers and can show you photos of completed projects similar to yours. Many customers also leave reviews on Google, Yelp, and other platforms detailing their experience with ProCraft Closets.",
-    category: "qualifications"
-  },
-  {
-    question: "How do you handle multi-closet projects?",
-    answer: "For homes needing multiple closet solutions, we offer project coordination and package pricing. We can design and install multiple closets efficiently, often completing several closets in one day or coordinating installations to minimize disruption.",
-    category: "process"
-  },
-  {
-    question: "What makes your closet designs functional long-term?",
-    answer: "Our designs focus on adaptability with adjustable shelving, modular components, quality hardware, and timeless aesthetics. We consider your lifestyle changes and design systems that remain functional and beautiful for decades."
-    , category: "guarantees"
-  }
-]
-
-const categories = {
-  services: "Services & Solutions",
-  pricing: "Pricing & Payment",
-  process: "Design & Installation Process",
-  areas: "Service Areas",
-  qualifications: "Company & Qualifications", 
-  guarantees: "Warranties & Guarantees"
-}
-
-export default function FAQPage() {
-  const groupedFAQs = faqData.reduce((acc, faq) => {
-    if (!acc[faq.category]) {
-      acc[faq.category] = []
-    }
-    acc[faq.category].push(faq)
-    return acc
-  }, {} as Record<string, FAQItem[]>)
-
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get answers to common questions about ProCraft Closets custom closet design, 
-            installation, and services in Seattle, Washington. Can't find what you're looking for? 
-            <a href="tel:206-555-0123" className="text-blue-600 hover:text-blue-800 ml-1">
-              Call us at (206) 555-0123
-            </a>
-          </p>
-        </header>
-
-        <div className="space-y-12">
-          {Object.entries(groupedFAQs).map(([categoryKey, faqs]) => (
-            <section key={categoryKey} className="bg-white rounded-lg shadow-sm p-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6 border-b border-gray-200 pb-3">
-                {categories[categoryKey as keyof typeof categories]}
-              </h2>
+    id: 'existing-closet-renovation-upgrades',
+    question: 'Can you renovate and upgrade existing closets?',
+    answer: 'Absolutely! We frequently renovate existing closets by removing old systems and creating completely new custom solutions. We can work within existing spaces or recommend modifications to improve functionality. Renovations often provide dramatic improvements in storage capacity and organization while updating the overall aesthetic.',

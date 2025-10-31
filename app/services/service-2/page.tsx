@@ -1,203 +1,226 @@
-'use client';
-
-import { useState } from 'react';
-import Image from 'next/image';
+import React from 'react';
 import Link from 'next/link';
-import { 
-  CheckIcon, 
-  StarIcon, 
-  PhoneIcon, 
-  MapPinIcon,
-  ClockIcon,
-  CurrencyDollarIcon,
-  Cog6ToothIcon,
-  PaintBrushIcon,
-  SwatchIcon
-} from '@heroicons/react/24/outline';
+import { Phone, MapPin, CheckCircle, ArrowRight, Users, Clock, Award, Lightbulb, Palette, Ruler, Wrench, Star } from 'lucide-react';
 
 export default function Service2Page() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-
   const benefits = [
     {
-      title: "Custom Design Solutions",
-      description: "Tailored closet systems designed specifically for your space and lifestyle needs.",
-      icon: <PaintBrushIcon className="h-8 w-8" />
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      title: "Expert Design Consultation",
+      description: "Work with our experienced designers to create the perfect custom closet solution tailored to your specific needs and style preferences."
     },
     {
-      title: "Premium Materials",
-      description: "High-quality wood, metal, and composite materials that ensure durability and longevity.",
-      icon: <SwatchIcon className="h-8 w-8" />
+      icon: <Palette className="w-8 h-8 text-blue-600" />,
+      title: "Premium Material Selection",
+      description: "Choose from high-quality materials including solid wood, engineered wood, and premium hardware options to match your home's aesthetic."
     },
     {
+      icon: <Ruler className="w-8 h-8 text-blue-600" />,
+      title: "Maximized Storage Space",
+      description: "Custom-designed layouts that optimize every inch of your closet space with intelligent storage solutions and organizational systems."
+    },
+    {
+      icon: <Award className="w-8 h-8 text-blue-600" />,
       title: "Professional Installation",
-      description: "Expert installation by certified professionals with attention to every detail.",
-      icon: <Cog6ToothIcon className="h-8 w-8" />
+      description: "Our certified installers ensure perfect fit and finish with attention to detail and minimal disruption to your daily routine."
     },
     {
+      icon: <Clock className="w-8 h-8 text-blue-600" />,
       title: "Lifetime Warranty",
-      description: "Comprehensive warranty coverage on all materials and craftsmanship.",
-      icon: <CheckIcon className="h-8 w-8" />
+      description: "All custom closet installations come with comprehensive warranty coverage for materials and workmanship."
     },
     {
-      title: "Maximized Storage",
-      description: "Intelligent design that doubles or triples your existing storage capacity.",
-      icon: <CurrencyDollarIcon className="h-8 w-8" />
-    },
-    {
-      title: "Quick Turnaround",
-      description: "Most projects completed within 2-3 weeks from design approval to installation.",
-      icon: <ClockIcon className="h-8 w-8" />
+      icon: <Lightbulb className="w-8 h-8 text-blue-600" />,
+      title: "Smart Organization Features",
+      description: "Innovative storage solutions including pull-out drawers, adjustable shelving, and specialty accessories for optimal organization."
     }
   ];
 
   const processSteps = [
     {
-      step: "01",
-      title: "Free Consultation",
-      description: "We visit your home to assess your space, discuss your needs, and take precise measurements.",
-      duration: "1-2 hours"
+      step: 1,
+      title: "Initial Consultation",
+      description: "Schedule a free in-home consultation where we assess your space, discuss your needs, and explore design possibilities."
     },
     {
-      step: "02", 
-      title: "Custom Design",
-      description: "Our designers create a detailed 3D rendering of your custom closet system with material selections.",
-      duration: "3-5 days"
+      step: 2,
+      title: "Custom Design & Planning",
+      description: "Our designers create detailed 3D renderings and plans, allowing you to visualize your new custom closet before installation."
     },
     {
-      step: "03",
-      title: "Manufacturing",
-      description: "Your closet components are precision-crafted in our local Seattle facility using premium materials.",
-      duration: "7-10 days"
+      step: 3,
+      title: "Material Selection",
+      description: "Choose from our extensive selection of premium materials, finishes, hardware, and accessories to match your style."
     },
     {
-      step: "04",
+      step: 4,
+      title: "Precision Manufacturing",
+      description: "Your custom closet components are manufactured to exact specifications using state-of-the-art equipment and quality materials."
+    },
+    {
+      step: 5,
       title: "Professional Installation",
-      description: "Our certified installers complete your project with minimal disruption to your daily routine.",
-      duration: "1-2 days"
+      description: "Our certified installation team handles the complete installation process, ensuring perfect fit and finish."
+    },
+    {
+      step: 6,
+      title: "Final Inspection & Training",
+      description: "We conduct a thorough inspection and provide guidance on how to maximize your new custom closet system."
     }
   ];
 
   const pricingTiers = [
     {
-      name: "Essential",
-      price: "$1,200 - $2,500",
-      description: "Perfect for small to medium walk-in closets",
+      name: "Essential Custom",
+      priceRange: "$1,200 - $2,500",
       features: [
-        "Basic shelving and hanging rods",
-        "Melamine finish options",
-        "Standard accessories included",
+        "Basic custom design consultation",
+        "Standard shelving and hanging systems",
+        "Choice of 3 finish options",
+        "Basic hardware package",
         "Professional installation",
-        "5-year warranty"
-      ]
+        "1-year warranty"
+      ],
+      bestFor: "Small to medium closets with straightforward storage needs"
     },
     {
-      name: "Premium",
-      price: "$2,500 - $4,500", 
-      description: "Ideal for larger closets with advanced features",
+      name: "Premium Custom",
+      priceRange: "$2,500 - $4,500",
       features: [
-        "Custom shelving and drawers",
-        "Wood veneer finish options",
-        "Premium hardware and accessories",
-        "LED lighting integration",
-        "10-year warranty"
+        "Comprehensive design consultation",
+        "Advanced storage solutions",
+        "Choice of 8 premium finishes",
+        "Upgraded hardware package",
+        "Specialty accessories included",
+        "Professional installation",
+        "3-year warranty"
       ],
+      bestFor: "Master bedrooms and luxury closet spaces",
       popular: true
     },
     {
-      name: "Luxury",
-      price: "$4,500 - $8,000+",
-      description: "Ultimate solution for master bedroom suites",
+      name: "Luxury Custom",
+      priceRange: "$4,500 - $8,000+",
       features: [
-        "Fully custom design with islands",
-        "Solid wood or high-end finishes",
-        "Premium soft-close hardware",
-        "Full lighting and electrical",
+        "Complete luxury design experience",
+        "Premium materials and finishes",
+        "Unlimited finish options",
+        "Designer hardware collection",
+        "Full accessory package",
+        "White-glove installation service",
         "Lifetime warranty"
-      ]
+      ],
+      bestFor: "High-end homes and walk-in closet suites"
     }
   ];
 
   const faqs = [
     {
-      question: "How long does the entire process take from consultation to completion?",
-      answer: "Typically, the entire process takes 2-3 weeks. This includes 3-5 days for design development, 7-10 days for manufacturing, and 1-2 days for installation. We'll provide you with a detailed timeline during your consultation."
+      question: "How long does the custom closet design and installation process take?",
+      answer: "The complete process typically takes 3-5 weeks from initial consultation to final installation. This includes 1-2 weeks for design and planning, 2-3 weeks for manufacturing, and 1-2 days for professional installation."
     },
     {
-      question: "Do you work with existing closet spaces or can you expand them?",
-      answer: "We work with both existing closet spaces and can help with expansions. Our team can remove walls, add lighting, and completely reconfigure your space. We'll discuss all possibilities during your free consultation."
+      question: "Can you work with existing closet spaces or do you only do new construction?",
+      answer: "We specialize in transforming existing closet spaces of all sizes. Our designers are experts at maximizing storage in any space, from small reach-in closets to large walk-in suites."
     },
     {
-      question: "What materials and finishes are available?",
-      answer: "We offer a wide range of materials including melamine, wood veneer, and solid wood options. Finishes range from classic whites and neutrals to rich wood tones and contemporary colors. We'll show you samples during your consultation."
+      question: "What materials and finishes are available for custom closets?",
+      answer: "We offer a wide range of premium materials including solid wood, engineered wood, and laminate options. Finish choices include painted, stained, and specialty finishes in dozens of colors to match any décor."
     },
     {
-      question: "Is financing available for larger projects?",
-      answer: "Yes, we offer flexible financing options including 0% interest for qualified customers. We work with several financing partners to make your dream closet affordable with manageable monthly payments."
+      question: "Do you provide design services, or do I need to have a plan ready?",
+      answer: "We provide complete design services! Our experienced designers will work with you to create the perfect layout and storage solutions based on your specific needs, space, and style preferences."
     },
     {
-      question: "What happens if I'm not satisfied with the final result?",
-      answer: "Customer satisfaction is our top priority. We offer a 30-day satisfaction guarantee. If you're not completely happy with your new closet, we'll work with you to make it right at no additional cost."
+      question: "What warranty coverage is included with custom closet installation?",
+      answer: "All installations include comprehensive warranty coverage ranging from 1 year to lifetime depending on the package selected. This covers both materials and workmanship for complete peace of mind."
     },
     {
-      question: "Do you provide warranty coverage?",
-      answer: "Yes, all our work comes with comprehensive warranty coverage. Essential packages include 5 years, Premium packages include 10 years, and Luxury packages include lifetime warranty on materials and craftsmanship."
+      question: "Can you accommodate special storage needs for specific items?",
+      answer: "Absolutely! We specialize in creating custom storage solutions for jewelry, shoes, ties, belts, and other specialty items. Our designers can incorporate any specific storage requirements into your custom design."
     }
   ];
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">PC</span>
+              </div>
+              <span className="text-xl font-bold text-gray-900">ProCraft Closets</span>
+            </Link>
+            
+            <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-2 text-gray-600">
+                <MapPin className="w-4 h-4" />
+                <span className="text-sm">Seattle, WA</span>
+              </div>
+              <a 
+                href="tel:(206) 555-0100"
+                className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                <span className="font-medium">(206) 555-0100</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-slate-900 to-slate-700 py-24">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Custom Walk-In Closets
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Custom Closet Design & Installation
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Transform your bedroom with a luxurious, organized walk-in closet designed specifically for your lifestyle and storage needs.
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              Transform your storage space with expertly designed custom closets tailored to your lifestyle. 
+              Professional design consultation, premium materials, and flawless installation in Seattle, WA.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:(206) 555-0100"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors flex items-center gap-2"
+                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
               >
-                <PhoneIcon className="h-5 w-5" />
-                (206) 555-0100
+                <Phone className="w-5 h-5 mr-2" />
+                Get Free Consultation
               </a>
-              <button className="bg-white hover:bg-gray-100 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
-                Free Consultation
-              </button>
+              <Link
+                href="#pricing"
+                className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+              >
+                View Pricing
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Why Choose ProCraft for Your Walk-In Closet?
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Why Choose Custom Closet Solutions?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience the difference that professional design and quality craftsmanship make in creating your dream closet space.
+              Experience the difference of professionally designed and installed custom closets 
+              that maximize space, enhance organization, and add value to your home.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-blue-600 mb-4">
-                  {benefit.icon}
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-600">
-                  {benefit.description}
-                </p>
+              <div key={index} className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="mb-4">{benefit.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
+                <p className="text-gray-600">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -205,32 +228,26 @@ export default function Service2Page() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Our Proven Process
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Custom Closet Process
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From initial consultation to final installation, we make the process seamless and stress-free.
+              From initial consultation to final installation, we guide you through every step 
+              of creating your perfect custom closet solution.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {processSteps.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 mb-2">
-                  {step.description}
-                </p>
-                <span className="text-sm text-blue-600 font-semibold">
-                  {step.duration}
-                </span>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+                <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
           </div>
@@ -238,108 +255,63 @@ export default function Service2Page() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="pricing" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Investment Guide
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Custom Closet Pricing Guide
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the perfect package for your space and budget. All prices include design, materials, and professional installation.
+              Choose the custom closet package that best fits your needs and budget. 
+              All packages include professional design consultation and installation.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {pricingTiers.map((tier, index) => (
-              <div 
-                key={index} 
-                className={`bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow relative ${
-                  tier.popular ? 'ring-2 ring-blue-600' : ''
-                }`}
-              >
+              <div key={index} className={`rounded-lg p-8 ${tier.popular ? 'bg-blue-50 border-2 border-blue-200 relative' : 'bg-gray-50 border border-gray-200'}`}>
                 {tier.popular && (
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">Most Popular</span>
                   </div>
                 )}
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
+                <p className="text-3xl font-bold text-blue-600 mb-4">{tier.priceRange}</p>
+                <p className="text-gray-600 mb-6">{tier.bestFor}</p>
                 
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                    {tier.name}
-                  </h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">
-                    {tier.price}
-                  </div>
-                  <p className="text-gray-600">
-                    {tier.description}
-                  </p>
-                </div>
-
                 <ul className="space-y-3 mb-8">
                   {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center gap-3">
-                      <CheckIcon className="h-5 w-5 text-green-500 flex-shrink-0" />
+                    <li key={featureIndex} className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                       <span className="text-gray-700">{feature}</span>
                     </li>
                   ))}
                 </ul>
-
-                <button className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors ${
-                  tier.popular 
-                    ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                    : 'bg-gray-100 hover:bg-gray-200 text-slate-900'
-                }`}>
-                  Get Started
-                </button>
+                
+                <a
+                  href="tel:(206) 555-0100"
+                  className={`block w-full text-center px-6 py-3 rounded-md font-medium transition-colors ${
+                    tier.popular 
+                      ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                      : 'bg-white text-blue-600 border border-blue-600 hover:bg-blue-50'
+                  }`}
+                >
+                  Get Quote
+                </a>
               </div>
             ))}
           </div>
 
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-4">
-              *Final pricing depends on specific dimensions, materials, and customizations. Free in-home consultation includes detailed quote.
+              *Pricing varies based on closet size, materials selected, and complexity of design. 
+              Free in-home consultation includes detailed quote.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-              <span className="flex items-center gap-2">
-                <CheckIcon className="h-4 w-4 text-green-500" />
-                0% Financing Available
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckIcon className="h-4 w-4 text-green-500" />
-                Free Design Service
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckIcon className="h-4 w-4 text-green-500" />
-                Licensed & Insured
-              </span>
-            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Get answers to common questions about our walk-in closet services.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="border border-gray-200 rounded-lg">
-                <button
-                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50"
-                  onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-                >
-                  <span className="font-semibold text-slate-900">
-                    {faq.question}
-                  </span>
-                  <span className="text-2xl text-gray-400">
-                    {openFAQ === index ? '

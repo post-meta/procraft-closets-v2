@@ -1,316 +1,256 @@
-export default function HowToChooseClosetServicePage() {
+export default function ChooseBestClosetServiceBlog() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <article>
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            How to Choose the Best Closet Service: Your Complete Guide to Custom Organization
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-blue-900 to-slate-800 text-white py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            How to Choose the Best Closet Service for Your Seattle Home
           </h1>
-          <div className="flex items-center text-gray-600 mb-6">
-            <span className="mr-4">By ProCraft Closets Seattle</span>
-            <span>•</span>
-            <span className="ml-4">{new Date().toLocaleDateString()}</span>
-          </div>
-          <p className="text-xl text-gray-700 leading-relaxed">
-            Choosing the right closet service can transform your home organization and daily routine. 
-            With numerous options available in Seattle and the Pacific Northwest, finding the perfect 
-            custom closet company requires careful consideration of multiple factors. This comprehensive 
-            guide will help you make an informed decision that maximizes your investment.
+          <p className="text-xl text-blue-100 mb-8">
+            Transform your space with the right custom closet company. Learn what to look for when selecting closet organization services in the Pacific Northwest.
           </p>
-        </header>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <span className="bg-blue-800 px-3 py-1 rounded-full">Custom Closets Seattle</span>
+            <span className="bg-blue-800 px-3 py-1 rounded-full">Closet Design</span>
+            <span className="bg-blue-800 px-3 py-1 rounded-full">Home Organization</span>
+          </div>
+        </div>
+      </div>
 
-        <div className="prose prose-lg max-w-none">
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-              Understanding Your Closet Needs
-            </h2>
-            
-            <p className="mb-6">
-              Before researching closet services, it's crucial to assess your specific storage requirements. 
-              Every household has unique organizational challenges, from cramped Seattle condos to spacious 
-              suburban homes. Consider your current storage pain points, lifestyle needs, and long-term goals.
-            </p>
+      {/* Main Content */}
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        {/* Introduction */}
+        <div className="prose prose-lg max-w-none mb-12">
+          <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            Your closet is more than just storage space—it's the foundation of your daily routine and a reflection of your lifestyle. Whether you're dealing with a cramped bedroom closet or planning a luxurious walk-in wardrobe, choosing the right closet service can make all the difference between a functional space and your dream organizational system.
+          </p>
+          
+          <p className="text-gray-700 mb-8">
+            In Seattle's competitive home improvement market, numerous closet companies promise exceptional results. However, not all closet services are created equal. From design expertise to installation quality, warranty coverage to customer service, there are crucial factors that separate outstanding closet companies from the rest.
+          </p>
 
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Evaluating Your Space and Storage Requirements
-            </h3>
-            
-            <p className="mb-4">
-              Start by documenting your existing closet dimensions, ceiling heights, and architectural 
-              constraints. Take inventory of your belongings, noting seasonal items, frequently used 
-              pieces, and special storage needs like shoe collections or delicate garments.
-            </p>
-
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Measure all closet spaces accurately, including depth and height clearances</li>
-              <li>Identify items requiring specialized storage solutions</li>
-              <li>Consider future needs, such as growing families or changing lifestyles</li>
-              <li>Note any structural limitations or building code requirements</li>
-              <li>Assess lighting conditions and ventilation needs</li>
-            </ul>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-              Key Factors When Choosing a Closet Service
-            </h2>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Experience and Local Expertise
-            </h3>
-            
-            <p className="mb-6">
-              Seattle's unique housing stock, from historic craftsman homes to modern high-rises, 
-              requires specialized knowledge. Look for closet services with extensive local experience 
-              who understand regional building codes, climate considerations, and architectural styles.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Design Capabilities and Customization Options
-            </h3>
-            
-            <p className="mb-4">
-              The best closet services offer comprehensive design capabilities, from initial consultation 
-              through 3D renderings and material selection. Quality providers should present multiple 
-              design options tailored to your specific needs and aesthetic preferences.
-            </p>
-
-            <div className="bg-blue-50 p-6 rounded-lg mb-6">
-              <h4 className="text-lg font-semibold text-blue-900 mb-3">
-                Essential Design Services to Look For:
-              </h4>
-              <ul className="list-disc pl-6 space-y-2 text-blue-800">
-                <li>Professional space planning and optimization</li>
-                <li>3D visualization and detailed renderings</li>
-                <li>Extensive material and finish selections</li>
-                <li>Integration with existing décor and architecture</li>
-                <li>Accessibility considerations and universal design principles</li>
-              </ul>
-            </div>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Quality of Materials and Construction
-            </h3>
-            
-            <p className="mb-6">
-              Investigate the materials and construction methods each closet service employs. 
-              High-quality closet systems should feature durable materials, precision manufacturing, 
-              and hardware designed for daily use. In Seattle's humid climate, proper material 
-              selection becomes even more critical for long-term performance.
-            </p>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-              Evaluating Closet Service Providers
-            </h2>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Licensing, Insurance, and Professional Credentials
-            </h3>
-            
-            <p className="mb-6">
-              Verify that potential closet services maintain proper licensing for construction work 
-              in Washington state. Professional providers should carry comprehensive liability insurance 
-              and workers' compensation coverage. Look for certifications from industry organizations 
-              and manufacturer training programs.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Portfolio Review and Reference Checking
-            </h3>
-            
-            <p className="mb-4">
-              Examine each company's portfolio carefully, paying attention to projects similar to 
-              yours in scope and style. Request references from recent clients and follow up with 
-              actual conversations about their experience, timeline adherence, and post-installation support.
-            </p>
-
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                Questions to Ask References:
-              </h4>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>How well did the company communicate throughout the project?</li>
-                <li>Was the installation completed on schedule and within budget?</li>
-                <li>How did they handle any unexpected issues or changes?</li>
-                <li>What was the quality of cleanup and final detailing?</li>
-                <li>Would you hire them again for future projects?</li>
-              </ul>
-            </div>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Installation Process and Project Management
-            </h3>
-            
-            <p className="mb-6">
-              Professional closet services should demonstrate clear project management capabilities, 
-              from initial measurement through final installation. Understand their timeline expectations, 
-              installation procedures, and how they minimize disruption to your daily routine.
-            </p>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-              Pricing and Value Considerations
-            </h2>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Understanding Closet Service Pricing Models
-            </h3>
-            
-            <p className="mb-6">
-              Closet service pricing varies significantly based on materials, complexity, and 
-              customization level. While cost is important, focus on overall value including 
-              design quality, material durability, installation expertise, and warranty coverage. 
-              The least expensive option often proves costly long-term.
-            </p>
-
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Warranty and After-Installation Support
-            </h3>
-            
-            <p className="mb-6">
-              Comprehensive warranty coverage demonstrates a company's confidence in their work 
-              and materials. Look for warranties covering both manufacturing defects and installation 
-              issues, with clear terms for repair or replacement services.
-            </p>
-          </section>
-
-          <section className="mb-12 bg-green-50 p-8 rounded-lg">
-            <h2 className="text-3xl font-semibold text-green-900 mb-6">
-              Expert Tips from ProCraft Closets Seattle
-            </h2>
-
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-xl font-semibold text-green-800 mb-2">
-                  Tip #1: Prioritize Local Experience
-                </h4>
-                <p className="text-green-700">
-                  Seattle homes present unique challenges from earthquake considerations to moisture 
-                  management. Choose a closet service with deep local knowledge and experience working 
-                  in Pacific Northwest conditions.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold text-green-800 mb-2">
-                  Tip #2: Invest in Quality Hardware
-                </h4>
-                <p className="text-green-700">
-                  Hardware quality significantly impacts long-term satisfaction. Insist on premium 
-                  drawer slides, adjustable shelving systems, and robust hanging solutions that 
-                  withstand daily use without degradation.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold text-green-800 mb-2">
-                  Tip #3: Plan for Flexibility
-                </h4>
-                <p className="text-green-700">
-                  Life changes, and your closet should adapt accordingly. Choose systems with 
-                  adjustable components and modular designs that accommodate evolving storage needs 
-                  without complete replacement.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold text-green-800 mb-2">
-                  Tip #4: Consider the Complete Package
-                </h4>
-                <p className="text-green-700">
-                  Look beyond initial pricing to evaluate the complete service package including 
-                  design consultation, project management, installation quality, and ongoing support. 
-                  The best value often comes from comprehensive service providers.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold text-green-800 mb-2">
-                  Tip #5: Don't Rush the Decision
-                </h4>
-                <p className="text-green-700">
-                  A custom closet represents a significant investment in your home's functionality 
-                  and value. Take time to thoroughly evaluate options, check references, and ensure 
-                  your chosen provider aligns with your expectations and timeline.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-              Red Flags to Avoid
-            </h2>
-            
-            <p className="mb-6">
-              Certain warning signs indicate potential problems with closet service providers. 
-              Be cautious of companies that pressure you into immediate decisions, lack proper 
-              licensing or insurance, or cannot provide local references from recent projects.
-            </p>
-
-            <div className="bg-red-50 p-6 rounded-lg mb-6">
-              <h4 className="text-lg font-semibold text-red-900 mb-3">
-                Warning Signs to Watch For:
-              </h4>
-              <ul className="list-disc pl-6 space-y-2 text-red-800">
-                <li>Door-to-door sales tactics or high-pressure closing techniques</li>
-                <li>Unusually low bids that seem too good to be true</li>
-                <li>Inability to provide local references or portfolio examples</li>
-                <li>Lack of proper licensing, insurance, or professional credentials</li>
-                <li>Vague contracts without detailed specifications or timelines</li>
-                <li>Requests for full payment upfront before work begins</li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-6">
-              Making Your Final Decision
-            </h2>
-            
-            <p className="mb-6">
-              After evaluating multiple closet services, compare your options systematically using 
-              consistent criteria. Consider design quality, material specifications, installation 
-              timeline, warranty coverage, and total investment. The right choice balances all 
-              these factors while meeting your specific needs and budget constraints.
-            </p>
-
-            <p className="mb-6">
-              Remember that a custom closet system represents a long-term investment in your home's 
-              functionality and value. Choosing the right closet service provider ensures you'll 
-              enjoy organized, efficient storage for years to come while adding value to your 
-              Seattle-area property.
-            </p>
-          </section>
+          <p className="text-gray-700 mb-8">
+            At ProCraft Closets, we've helped hundreds of Seattle homeowners transform their storage spaces over the years. Through our experience, we've identified the key elements that define exceptional closet services. This comprehensive guide will walk you through everything you need to know to make an informed decision for your custom closet project.
+          </p>
         </div>
 
-        <footer className="mt-12 pt-8 border-t border-gray-200">
-          <div className="bg-blue-600 text-white p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Transform Your Closet Space?
-            </h3>
-            <p className="text-lg mb-6">
-              ProCraft Closets brings over a decade of experience serving Seattle homeowners with 
-              custom closet solutions. Our local expertise, quality materials, and comprehensive 
-              service approach ensure your satisfaction from design through installation and beyond.
-            </p>
-            <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors w-full md:w-auto">
-                Schedule Free Consultation
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors w-full md:w-auto">
-                View Our Portfolio
-              </button>
+        {/* Main Content Sections */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-blue-600 pb-2">
+            Understanding Different Types of Closet Services
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Custom Closet Companies</h3>
+              <p className="text-gray-700 mb-4">
+                Full-service providers who design, manufacture, and install completely customized closet systems tailored to your specific space and needs.
+              </p>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Unlimited design possibilities</li>
+                <li>• Premium materials and finishes</li>
+                <li>• Professional installation</li>
+                <li>• Comprehensive warranties</li>
+              </ul>
             </div>
-            <p className="mt-6 text-blue-100">
-              Call (206) 555-0123 | Serving Seattle, Bellevue, Redmond & surrounding areas
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Modular System Providers</h3>
+              <p className="text-gray-700 mb-4">
+                Companies offering pre-designed closet components that can be mixed and matched to fit your space.
+              </p>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Faster installation timeline</li>
+                <li>• Limited customization options</li>
+                <li>• Standardized components</li>
+                <li>• Lower cost entry point</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Professional Organization Services</h3>
+            <p className="text-gray-700">
+              Specialists who focus on optimizing existing closet spaces through organization systems, storage solutions, and decluttering services. While they don't typically handle construction or custom installations, they excel at maximizing functionality within your current space.
             </p>
           </div>
-        </footer>
-      </article>
-    </div>
-  );
-}
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-blue-600 pb-2">
+            Essential Factors When Evaluating Closet Companies
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">1. Design Expertise and Portfolio</h3>
+              <p className="text-gray-700 mb-4">
+                The best closet services employ experienced designers who understand both aesthetics and functionality. Look for companies that showcase diverse portfolios demonstrating their ability to work with different spaces, styles, and budgets.
+              </p>
+              <div className="bg-gray-50 p-4 rounded">
+                <h4 className="font-semibold mb-2">What to Look For:</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Certified designers with relevant credentials</li>
+                  <li>• Portfolio showing projects similar to yours</li>
+                  <li>• 3D design capabilities and visualization tools</li>
+                  <li>• Awards or recognition in the industry</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">2. Material Quality and Options</h3>
+              <p className="text-gray-700 mb-4">
+                Your closet system is a long-term investment. Premium closet companies offer high-quality materials that withstand daily use while maintaining their appearance and functionality over time.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <h4 className="font-semibold mb-2 text-green-700">Quality Indicators:</h4>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Solid wood or high-grade engineered materials</li>
+                    <li>• Soft-close hardware</li>
+                    <li>• Durable finish options</li>
+                    <li>• Adjustable shelving systems</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-red-700">Red Flags:</h4>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Particleboard or low-grade MDF</li>
+                    <li>• Limited finish selections</li>
+                    <li>• Basic hardware without upgrades</li>
+                    <li>• No material samples available</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">3. Installation Process and Timeline</h3>
+              <p className="text-gray-700 mb-4">
+                Professional installation is crucial for the longevity and functionality of your closet system. Reputable companies employ skilled installers and provide clear timelines for project completion.
+              </p>
+              <div className="bg-blue-50 p-4 rounded">
+                <h4 className="font-semibold mb-2">Installation Best Practices:</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Licensed and insured installation teams</li>
+                  <li>• Detailed project timeline with milestones</li>
+                  <li>• Protection of surrounding areas during installation</li>
+                  <li>• Post-installation cleanup and walkthrough</li>
+                  <li>• Clear communication throughout the process</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-blue-600 pb-2">
+            Questions to Ask Potential Closet Service Providers
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Design and Planning Phase</h3>
+                <ul className="text-gray-700 space-y-3">
+                  <li>• How long have you been designing closets in the Seattle area?</li>
+                  <li>• Can you provide references from recent projects?</li>
+                  <li>• What design software do you use for visualization?</li>
+                  <li>• How do you handle unique space challenges?</li>
+                  <li>• What's included in the design consultation?</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Materials and Manufacturing</h3>
+                <ul className="text-gray-700 space-y-3">
+                  <li>• Where are your closet systems manufactured?</li>
+                  <li>• What materials do you use for different components?</li>
+                  <li>• Can I see samples of materials and finishes?</li>
+                  <li>• How do you ensure quality control?</li>
+                  <li>• What customization options are available?</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Installation and Service</h3>
+                <ul className="text-gray-700 space-y-3">
+                  <li>• Who performs the installation work?</li>
+                  <li>• How long will the installation take?</li>
+                  <li>• Are your installers licensed and insured?</li>
+                  <li>• What happens if there are installation issues?</li>
+                  <li>• Do you clean up after the installation?</li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Warranty and Support</h3>
+                <ul className="text-gray-700 space-y-3">
+                  <li>• What warranty do you offer on materials and installation?</li>
+                  <li>• How do you handle warranty claims?</li>
+                  <li>• Do you offer ongoing maintenance services?</li>
+                  <li>• What if I need modifications in the future?</li>
+                  <li>• How long will you be in business to honor warranties?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Expert Tips Section */}
+        <section className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-lg">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Expert Tips from ProCraft Closets
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">1</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Start with Your Lifestyle</h3>
+              <p className="text-gray-700">
+                Consider how you actually use your closet daily. Do you prefer hanging clothes or folded items? How many shoes do you own? Your habits should drive the design.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">2</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Don't Compromise on Quality</h3>
+              <p className="text-gray-700">
+                While budget matters, investing in quality materials and construction pays off long-term. A well-built closet system can last decades with proper care.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">3</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Plan for the Future</h3>
+              <p className="text-gray-700">
+                Your storage needs may change over time. Choose a closet service that designs flexible systems that can be modified as your lifestyle evolves.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">4</span>
+              </div>
+              <h3 className="text-lg font-semibold mb-3">Verify Local Experience</h3>
+              <p className="text-gray-700">
+                Seattle homes have unique characteristics. Choose a company familiar with local architecture, building codes, and climate considerations.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-white font-bold text-xl">5</span>
+              </div>
+              <h3

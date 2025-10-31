@@ -1,147 +1,114 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { CheckCircleIcon, PhoneIcon, MapPinIcon, ClockIcon, UserGroupIcon, CogIcon, PaintBrushIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+import { CheckCircle, ArrowRight, Phone, MapPin, Clock, Star, Wrench, Palette, Shield, Award } from 'lucide-react';
 
 export default function Service3Page() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900">
-                ProCraft Closets
-              </Link>
+      <header className="bg-gray-900 text-white py-4">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <div className="flex items-center space-x-2">
+            <h1 className="text-2xl font-bold">ProCraft Closets</h1>
+          </div>
+          <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-2">
+              <MapPin className="h-4 w-4" />
+              <span>Seattle, WA</span>
             </div>
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center text-gray-600">
-                <MapPinIcon className="h-5 w-5 mr-2" />
-                <span>Seattle, WA</span>
-              </div>
-              <div className="flex items-center text-gray-600">
-                <PhoneIcon className="h-5 w-5 mr-2" />
-                <a href="tel:(206) 555-0100" className="hover:text-blue-600">(206) 555-0100</a>
-              </div>
+            <div className="flex items-center space-x-2">
+              <Phone className="h-4 w-4" />
+              <span>(206) 555-0100</span>
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                Custom Closet Design & Installation
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Transform your storage space with our premium custom closet solutions. From initial design consultation to professional installation, we create personalized organizational systems that maximize space and enhance your daily routine.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="#contact" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center">
-                  Get Free Design Consultation
-                </Link>
-                <a href="tel:(206) 555-0100" className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center">
-                  Call (206) 555-0100
-                </a>
-              </div>
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-5xl font-bold mb-6">Professional Closet Repair & Restoration</h1>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">
+            Breathe new life into your existing closets with our expert repair and restoration services. 
+            From broken shelves to complete makeovers, we restore functionality and beauty to your storage spaces.
+          </p>
+          <div className="flex items-center justify-center space-x-4 mb-8">
+            <div className="flex items-center">
+              <Star className="h-5 w-5 text-yellow-400 mr-1" />
+              <span>4.9/5 Rating</span>
             </div>
-            <div className="relative">
-              <Image
-                src="/api/placeholder/600/400"
-                alt="Custom closet design and installation in Seattle"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-xl"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex items-center space-x-3">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <CheckCircleIcon className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Licensed & Insured</p>
-                    <p className="text-sm text-gray-600">Seattle Professionals</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <span>•</span>
+            <span>500+ Repairs Completed</span>
+            <span>•</span>
+            <span>Licensed & Insured</span>
           </div>
+          <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 rounded-lg text-lg transition-colors">
+            Get Free Repair Assessment
+          </button>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose ProCraft for Your Custom Closet?
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Why Choose Our Repair Services?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience the difference of working with Seattle's premier custom closet specialists
+              Save money and extend the life of your closets with professional repair and restoration services
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <PaintBrushIcon className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Personalized Design</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <Wrench className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4">Expert Craftsmanship</h3>
               <p className="text-gray-600">
-                Every closet is uniquely designed to match your style, space, and storage needs with 3D visualization
+                Our skilled technicians have years of experience repairing all types of closet systems, 
+                from basic wire shelving to high-end custom installations.
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CogIcon className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Premium Materials</h3>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4">Cost-Effective Solution</h3>
               <p className="text-gray-600">
-                High-quality wood, hardware, and finishes that ensure durability and long-lasting beauty
+                Repair costs typically 40-60% less than replacement. We help you maximize your investment 
+                while achieving like-new functionality and appearance.
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <UserGroupIcon className="h-8 w-8 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Expert Installation</h3>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <Clock className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4">Quick Turnaround</h3>
               <p className="text-gray-600">
-                Professional installation team with years of experience and attention to detail
+                Most repairs completed within 24-48 hours. We understand the importance of functional 
+                storage and work efficiently to restore your closets.
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <ClockIcon className="h-8 w-8 text-orange-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Quick Turnaround</h3>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <Palette className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4">Restoration Services</h3>
               <p className="text-gray-600">
-                Most projects completed within 2-3 weeks from design approval to installation
+                Beyond repairs, we offer complete restoration including refinishing, hardware updates, 
+                and modernization of older closet systems.
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircleIcon className="h-8 w-8 text-red-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Lifetime Warranty</h3>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <Award className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4">Quality Guarantee</h3>
               <p className="text-gray-600">
-                Comprehensive warranty on all materials and workmanship for complete peace of mind
+                All repairs backed by our comprehensive warranty. We stand behind our work and 
+                ensure lasting solutions for your closet issues.
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPinIcon className="h-8 w-8 text-indigo-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Local Seattle Team</h3>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <CheckCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-4">Same-Day Service</h3>
               <p className="text-gray-600">
-                Seattle-based professionals who understand local homes and design preferences
+                Emergency repair services available. We offer same-day appointments for urgent 
+                closet repairs and safety issues.
               </p>
             </div>
           </div>
@@ -149,122 +116,158 @@ export default function Service3Page() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Custom Closet Design Process
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From concept to completion in five simple steps
-            </p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Repair Process</h2>
+            <p className="text-xl text-gray-600">Simple, transparent, and efficient repair service from start to finish</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                1
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-8">
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">1</div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Initial Assessment</h3>
+                  <p className="text-gray-600 text-lg">
+                    We conduct a thorough inspection of your closet system to identify all issues, assess damage, 
+                    and determine the most cost-effective repair approach. Free on-site evaluation included.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Initial Consultation</h3>
-              <p className="text-gray-600 text-sm">
-                Free in-home consultation to assess your space, discuss needs, and explore design options
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                2
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">2</div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Detailed Estimate</h3>
+                  <p className="text-gray-600 text-lg">
+                    Receive a comprehensive written estimate detailing all necessary repairs, materials needed, 
+                    and timeline. We explain each repair and answer all your questions.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">3D Design</h3>
-              <p className="text-gray-600 text-sm">
-                Custom 3D design creation with detailed measurements and material specifications
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                3
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">3</div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Professional Repair</h3>
+                  <p className="text-gray-600 text-lg">
+                    Our certified technicians perform all repairs using high-quality materials and proven techniques. 
+                    We work efficiently while maintaining the highest standards of workmanship.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Approval & Order</h3>
-              <p className="text-gray-600 text-sm">
-                Review and approve final design, then we order premium materials and begin production
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                4
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">4</div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Quality Inspection</h3>
+                  <p className="text-gray-600 text-lg">
+                    Every repair undergoes rigorous quality control testing. We ensure proper functionality, 
+                    stability, and safety before considering the job complete.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Manufacturing</h3>
-              <p className="text-gray-600 text-sm">
-                Precision manufacturing of your custom closet components using premium materials
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                5
+              
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg">5</div>
+                <div>
+                  <h3 className="text-2xl font-semibold mb-2">Final Walkthrough & Warranty</h3>
+                  <p className="text-gray-600 text-lg">
+                    We conduct a final walkthrough with you to ensure complete satisfaction. All repairs come 
+                    with our comprehensive warranty and maintenance recommendations.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Installation</h3>
-              <p className="text-gray-600 text-sm">
-                Professional installation with minimal disruption and complete cleanup
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Pricing Guide */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Custom Closet Pricing Guide
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transparent pricing for every budget and closet size
-            </p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Repair Pricing Guide</h2>
+            <p className="text-xl text-gray-600">Transparent pricing for common closet repairs</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Essential</h3>
-              <div className="text-4xl font-bold text-blue-600 mb-2">$800 - $1,500</div>
-              <p className="text-gray-600 mb-6">Perfect for reach-in closets</p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Basic Repairs</h3>
+              <div className="text-center mb-6">
+                <span className="text-4xl font-bold text-blue-600">$75-200</span>
+                <p className="text-gray-600 mt-2">Per repair item</p>
+              </div>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Basic shelving system</span>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Shelf bracket replacement</span>
                 </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Single hanging rod</span>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Rod support repair</span>
                 </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Standard laminate finish</span>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Minor hardware fixes</span>
                 </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Professional installation</span>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Drawer slide replacement</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Door adjustment</span>
                 </li>
               </ul>
-              <Link href="#contact" className="block w-full bg-gray-100 text-gray-900 text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                Get Quote
-              </Link>
+              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors">
+                Schedule Basic Repair
+              </button>
             </div>
             
-            <div className="border-2 border-blue-500 rounded-lg p-8 hover:shadow-lg transition-shadow relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
+            <div className="bg-white rounded-lg shadow-lg p-8 border-4 border-blue-600 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">MOST POPULAR</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Premium</h3>
-              <div className="text-4xl font-bold text-blue-600 mb-2">$1,500 - $3,000</div>
-              <p className="text-gray-600 mb-6">Ideal for walk-in closets</p>
+              <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Repairs</h3>
+              <div className="text-center mb-6">
+                <span className="text-4xl font-bold text-blue-600">$300-800</span>
+                <p className="text-gray-600 mt-2">Per closet system</p>
+              </div>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Custom shelving & drawers</span>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Multiple component repairs</span>
                 </li>
-                <li className="flex items-center">
-                  <CheckCircleIcon className="h-5
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Structural reinforcement</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Hardware upgrades</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Minor modifications</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  <span>Surface restoration</span>
+                </li>
+              </ul>
+              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors">
+                Get Comprehensive Quote
+              </button>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Full Restoration</h3>
+              <div className="text-center mb-6">
+                <span className="text-4xl font-bold text-blue-600">$800-2000</span>
+                <p className="text-gray-600 mt-2">Complete makeover</p>
+              </div>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center space-x-3">
+                  <CheckCircle
